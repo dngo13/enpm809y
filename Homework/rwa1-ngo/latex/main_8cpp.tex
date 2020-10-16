@@ -1,0 +1,85 @@
+\section{rwa1-\/ngo/main.cpp File Reference}
+\label{main_8cpp}\index{rwa1-\/ngo/main.\+cpp@{rwa1-\/ngo/main.\+cpp}}
+{\ttfamily \#include $<$array$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ initial}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Place\+Red\+Part} (int red\+\_\+parts\+\_\+place, int init\+\_\+red\+\_\+parts, int red\+\_\+parts\+\_\+tray, int \&final\+\_\+red\+\_\+parts)
+\item 
+int \textbf{ Pick\+Red\+Part} (int red\+\_\+parts\+\_\+place, int init\+\_\+red\+\_\+parts, int red\+\_\+parts\+\_\+tray, int \&final\+\_\+red\+\_\+parts)
+\item 
+int \textbf{ Place\+Green\+Part} (int green\+\_\+parts\+\_\+place, int init\+\_\+green\+\_\+parts, int green\+\_\+parts\+\_\+tray, int \&final\+\_\+green\+\_\+parts)
+\item 
+void \textbf{ Pick\+Green\+Part} (int green\+\_\+parts\+\_\+place, int init\+\_\+green\+\_\+parts, int green\+\_\+parts\+\_\+tray, int \&final\+\_\+green\+\_\+parts)
+\item 
+int \textbf{ Place\+Blue\+Part} (int blue\+\_\+parts\+\_\+place, int init\+\_\+blue\+\_\+parts, int blue\+\_\+parts\+\_\+tray, int \&final\+\_\+blue\+\_\+parts)
+\item 
+void \textbf{ Pick\+Blue\+Part} (int blue\+\_\+parts\+\_\+place, int init\+\_\+blue\+\_\+parts, int \&blue\+\_\+parts\+\_\+tray, int \&final\+\_\+blue\+\_\+parts)
+\item 
+int \textbf{ main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ initial} \textbf{ robot}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{main()}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8cpp_a278b4eee3b5925ea77aad0ddcdfee1d8}} 
+\index{main.\+cpp@{main.\+cpp}!Pick\+Blue\+Part@{Pick\+Blue\+Part}}
+\index{Pick\+Blue\+Part@{Pick\+Blue\+Part}!main.\+cpp@{main.\+cpp}}
+\subsubsection{Pick\+Blue\+Part()}
+{\footnotesize\ttfamily void Pick\+Blue\+Part (\begin{DoxyParamCaption}\item[{int}]{blue\+\_\+parts\+\_\+place,  }\item[{int}]{init\+\_\+blue\+\_\+parts,  }\item[{int \&}]{blue\+\_\+parts\+\_\+tray,  }\item[{int \&}]{final\+\_\+blue\+\_\+parts }\end{DoxyParamCaption})}
+
+\mbox{\label{main_8cpp_ab7b860a161a0954e9e697d355dde70e0}} 
+\index{main.\+cpp@{main.\+cpp}!Pick\+Green\+Part@{Pick\+Green\+Part}}
+\index{Pick\+Green\+Part@{Pick\+Green\+Part}!main.\+cpp@{main.\+cpp}}
+\subsubsection{Pick\+Green\+Part()}
+{\footnotesize\ttfamily void Pick\+Green\+Part (\begin{DoxyParamCaption}\item[{int}]{green\+\_\+parts\+\_\+place,  }\item[{int}]{init\+\_\+green\+\_\+parts,  }\item[{int}]{green\+\_\+parts\+\_\+tray,  }\item[{int \&}]{final\+\_\+green\+\_\+parts }\end{DoxyParamCaption})}
+
+Function for Place -\/ green part After checking the required pre-\/conditions from the Pick\+Green\+Part function \mbox{\label{main_8cpp_a9c022e99bef095cb6b7f6c08b05b229a}} 
+\index{main.\+cpp@{main.\+cpp}!Pick\+Red\+Part@{Pick\+Red\+Part}}
+\index{Pick\+Red\+Part@{Pick\+Red\+Part}!main.\+cpp@{main.\+cpp}}
+\subsubsection{Pick\+Red\+Part()}
+{\footnotesize\ttfamily int Pick\+Red\+Part (\begin{DoxyParamCaption}\item[{int}]{red\+\_\+parts\+\_\+place,  }\item[{int}]{init\+\_\+red\+\_\+parts,  }\item[{int}]{red\+\_\+parts\+\_\+tray,  }\item[{int \&}]{final\+\_\+red\+\_\+parts }\end{DoxyParamCaption})}
+
+Function for Pick -\/ red part Compares the desired amount of red parts to be picked and then picks it up \mbox{\label{main_8cpp_a138194e6580474bfc3e9710ca290890b}} 
+\index{main.\+cpp@{main.\+cpp}!Place\+Blue\+Part@{Place\+Blue\+Part}}
+\index{Place\+Blue\+Part@{Place\+Blue\+Part}!main.\+cpp@{main.\+cpp}}
+\subsubsection{Place\+Blue\+Part()}
+{\footnotesize\ttfamily int Place\+Blue\+Part (\begin{DoxyParamCaption}\item[{int}]{blue\+\_\+parts\+\_\+place,  }\item[{int}]{init\+\_\+blue\+\_\+parts,  }\item[{int}]{blue\+\_\+parts\+\_\+tray,  }\item[{int \&}]{final\+\_\+blue\+\_\+parts }\end{DoxyParamCaption})}
+
+Function for Place -\/ blue part After checking the required pre-\/conditions from the Pick\+Blue\+Part function \mbox{\label{main_8cpp_a8bb1951743e3ef30906e61d7bd493515}} 
+\index{main.\+cpp@{main.\+cpp}!Place\+Green\+Part@{Place\+Green\+Part}}
+\index{Place\+Green\+Part@{Place\+Green\+Part}!main.\+cpp@{main.\+cpp}}
+\subsubsection{Place\+Green\+Part()}
+{\footnotesize\ttfamily int Place\+Green\+Part (\begin{DoxyParamCaption}\item[{int}]{green\+\_\+parts\+\_\+place,  }\item[{int}]{init\+\_\+green\+\_\+parts,  }\item[{int}]{green\+\_\+parts\+\_\+tray,  }\item[{int \&}]{final\+\_\+green\+\_\+parts }\end{DoxyParamCaption})}
+
+Function for Place -\/ green part After checking the required pre-\/conditions from the Pick\+Green\+Part function \mbox{\label{main_8cpp_ab55e6f6682d540f985104520e9ddf9a7}} 
+\index{main.\+cpp@{main.\+cpp}!Place\+Red\+Part@{Place\+Red\+Part}}
+\index{Place\+Red\+Part@{Place\+Red\+Part}!main.\+cpp@{main.\+cpp}}
+\subsubsection{Place\+Red\+Part()}
+{\footnotesize\ttfamily int Place\+Red\+Part (\begin{DoxyParamCaption}\item[{int}]{red\+\_\+parts\+\_\+place,  }\item[{int}]{init\+\_\+red\+\_\+parts,  }\item[{int}]{red\+\_\+parts\+\_\+tray,  }\item[{int \&}]{final\+\_\+red\+\_\+parts }\end{DoxyParamCaption})}
+
+Function for Place -\/ red part After checking the required pre-\/conditions from the Pick\+Red\+Part function 
+
+\subsection{Variable Documentation}
+\mbox{\label{main_8cpp_ae2b189ac6e2c703db02ee191e55921b7}} 
+\index{main.\+cpp@{main.\+cpp}!robot@{robot}}
+\index{robot@{robot}!main.\+cpp@{main.\+cpp}}
+\subsubsection{robot}
+{\footnotesize\ttfamily struct \textbf{ initial} robot}
+

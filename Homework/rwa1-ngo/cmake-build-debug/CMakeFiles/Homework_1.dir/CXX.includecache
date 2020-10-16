@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/rwa1-ngo/main.cpp
+array
+-
+iostream
+-
+

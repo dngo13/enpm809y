@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/rwa2_ngo.dir/main.cpp.o  -o rwa2_ngo 
