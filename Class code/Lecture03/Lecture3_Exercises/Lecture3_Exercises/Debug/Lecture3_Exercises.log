@@ -1,0 +1,6 @@
+﻿  Lecture3_Exercises.cpp
+E:\OneDrive UMD\OneDrive - University of Maryland\Fall 2020\ENPM809Y Intro Robot Programming\Class code\Lecture03\Lecture3_Exercises\Lecture3_Exercises\Lecture3_Exercises.cpp(7,24): error C2079: 'array_cp' uses undefined class 'std::array<int,3>'
+E:\OneDrive UMD\OneDrive - University of Maryland\Fall 2020\ENPM809Y Intro Robot Programming\Class code\Lecture03\Lecture3_Exercises\Lecture3_Exercises\Lecture3_Exercises.cpp(7,45): error C2440: 'initializing': cannot convert from 'initializer list' to 'int'
+E:\OneDrive UMD\OneDrive - University of Maryland\Fall 2020\ENPM809Y Intro Robot Programming\Class code\Lecture03\Lecture3_Exercises\Lecture3_Exercises\Lecture3_Exercises.cpp(7,35): message : The initializer contains too many elements
+E:\OneDrive UMD\OneDrive - University of Maryland\Fall 2020\ENPM809Y Intro Robot Programming\Class code\Lecture03\Lecture3_Exercises\Lecture3_Exercises\Lecture3_Exercises.cpp(9,22): error C3861: 'size': identifier not found
+E:\OneDrive UMD\OneDrive - University of Maryland\Fall 2020\ENPM809Y Intro Robot Programming\Class code\Lecture03\Lecture3_Exercises\Lecture3_Exercises\Lecture3_Exercises.cpp(10,15): error C2109: subscript requires array or pointer type

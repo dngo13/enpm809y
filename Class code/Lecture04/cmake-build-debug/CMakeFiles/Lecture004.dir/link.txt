@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Lecture004.dir/main.cpp.o  -o Lecture004 

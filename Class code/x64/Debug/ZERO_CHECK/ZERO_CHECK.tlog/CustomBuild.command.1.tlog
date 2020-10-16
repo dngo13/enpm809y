@@ -1,0 +1,10 @@
+^E:\ONEDRIVE UMD\ONEDRIVE - UNIVERSITY OF MARYLAND\FALL 2020\ENPM809Y INTRO ROBOT PROGRAMMING\CLASS CODE\CMAKEFILES\FCB3D5A54B7D2F3A20CC9E068DF71C2B\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SE:/OneDrive UMD/OneDrive - University of Maryland/Fall 2020/ENPM809Y Intro Robot Programming/Class code/Lecture02/Lecture 2 Exercises" "-BE:/OneDrive UMD/OneDrive - University of Maryland/Fall 2020/ENPM809Y Intro Robot Programming/Class code" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "E:/OneDrive UMD/OneDrive - University of Maryland/Fall 2020/ENPM809Y Intro Robot Programming/Class code/Lecture_2_Exercises.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
