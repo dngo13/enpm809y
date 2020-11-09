@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cols',['COLS',['../main_8cpp.html#ab59ad2ee1a48b83c2eef1f019ed8cc48',1,'main.cpp']]]
+  ['backtrack',['BackTrack',['../main_8cpp.html#aefd146022809df49fb9ba712ecb00ffe',1,'main.cpp']]]
 ];

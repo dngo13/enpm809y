@@ -1,0 +1,50 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedRobot/LandBasedRobot.h
+string
+-
+iostream
+-
+utility
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedTracked/landbasedtracked.cpp
+landbasedtracked.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedTracked/landbasedtracked.h
+iostream
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedTracked/landbasedtracked.h
+iostream
+-
+memory
+-
+../LandBasedRobot/LandBasedRobot.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedRobot/LandBasedRobot.h
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedWheeled/landbasedwheeled.h
+../LandBasedRobot/LandBasedRobot.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedRobot/LandBasedRobot.h
+iostream
+-
+memory
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/main.cpp
+LandBasedWheeled/landbasedwheeled.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedWheeled/landbasedwheeled.h
+LandBasedTracked/landbasedtracked.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/RWA3-Group3/LandBasedTracked/landbasedtracked.h
+vector
+-
+memory
+-
+iostream
+-
+

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main',['main',['../main_01__backup_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main _backup.cpp'],['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main():&#160;main.cpp']]]
+  ['checkoutside',['CheckOutside',['../main_8cpp.html#a15ab7ba904c0f46588d62b302075a8c3',1,'main.cpp']]],
+  ['checkwall',['CheckWall',['../main_8cpp.html#acfa4bb7c74cebff4cd34982630e27e5a',1,'main.cpp']]]
 ];

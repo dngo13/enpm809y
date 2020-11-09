@@ -1,0 +1,130 @@
+"/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/rwa2-ngo/cmake-build-debug/rwa2_ngo"
+This is the maze.
+# # # # # # # #  
+# . . # . . . #  
+# . # . . # . .  
+# . # # . # . #  
+. . # . . # . .  
+# . . . # # . #  
+Enter your desired starting position: 
+1 2
+Starting position is: {1, 2}.
+Enter your desired goal position: 
+4 2
+Goal position is: {4, 2}.
+Start x: 1 Start y: 2
+Not at goal.
+Checking from point: 1,2
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+No wall.
+Not at goal.
+Checking from point: 1,3
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+No wall.
+Not at goal.
+Checking from point: 1,4
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+No wall.
+Not at goal.
+Checking from point: 1,5
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+Position is at a wall.
+Checking north 0
+Not at goal.
+Checking from point: 2,3
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+Position is at a wall.
+Checking east 0
+Not at goal.
+Checking from point: 0,2
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+Position is at a wall.
+Checking south 0
+Not at goal.
+Checking from point: -1,4
+Checking if outside the maze
+Point is outside. 
+Checking west 0
+# # # # # # # #  
+# . . # . . . #  
+# . # . . # . .  
+# + # # G # . #  
+. . # . . # . .  
+# . . . # # . #  
+Goal not found.
+Checking north 1
+Checking north 1
+Not at goal.
+Checking from point: 1,2
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+No wall.
+Not at goal.
+Checking from point: 1,3
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+No wall.
+Not at goal.
+Checking from point: 1,4
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+No wall.
+Not at goal.
+Checking from point: 1,5
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+Position is at a wall.
+Checking north 0
+Not at goal.
+Checking from point: 2,3
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+Position is at a wall.
+Checking east 0
+Not at goal.
+Checking from point: 0,2
+Checking if outside the maze
+Point is not outside. 
+Checking wall
+Position is at a wall.
+Checking south 0
+Not at goal.
+Checking from point: -1,4
+Checking if outside the maze
+Point is outside. 
+Checking west 0
+# # # # # # # #  
+# . . # . . . #  
+# + # . . # . .  
+# + # # G # . #  
+. . # . . # . .  
+# . . . # # . #  
+Goal not found.
+Checking north 1
+Checking north 1
+# # # # # # # #  
+# . . # . . . #  
+# + # . . # . .  
+# + # # G # . #  
+. . # . . # . .  
+# . . . # # . #  
+
+Process finished with exit code 0
+

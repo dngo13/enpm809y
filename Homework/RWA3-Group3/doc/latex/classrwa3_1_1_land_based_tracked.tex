@@ -1,0 +1,365 @@
+\hypertarget{classrwa3_1_1_land_based_tracked}{}\section{rwa3\+:\+:Land\+Based\+Tracked Class Reference}
+\label{classrwa3_1_1_land_based_tracked}\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+
+
+{\ttfamily \#include $<$landbasedtracked.\+h$>$}
+
+
+
+Inheritance diagram for rwa3\+:\+:Land\+Based\+Tracked\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classrwa3_1_1_land_based_tracked__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rwa3\+:\+:Land\+Based\+Tracked\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classrwa3_1_1_land_based_tracked__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrwa3_1_1_land_based_tracked_a7afa1f901374a08d0bb23882988eef46}{Land\+Based\+Tracked} (std\+::string name=\char`\"{}tracked\char`\"{}, int x=2, int y=3)
+\item 
+void \hyperlink{classrwa3_1_1_land_based_tracked_a36d32a38c1c7cf44c5d7aebeb18f79ff}{Go\+Up} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_tracked_a1258bb7873abc517913e84e33effd6c4}{Go\+Down} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_tracked_a6f8d74079ad047edd9f17cc541eafa86}{Turn\+Left} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_tracked_a5f6a5b1871d9f75d8a724b8d7ae44d1f}{Turn\+Right} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_tracked_af1e65be827430cd9281e982409ebedcb}{Pick\+Up} (std\+::string obj) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_tracked_a89dbcac8ec2fd64c6b168167cd6363a4}{Release} (std\+::string obj) override
+\item 
+int \hyperlink{classrwa3_1_1_land_based_tracked_a9065f381181bef7d8a4c8f4061ef2cda}{get\+\_\+x} () const
+\item 
+int \hyperlink{classrwa3_1_1_land_based_tracked_a11025bced4da296a2207e169fe328857}{get\+\_\+y} () const
+\item 
+virtual \hyperlink{classrwa3_1_1_land_based_tracked_a018639eac0eabfcf86fc2b48e0b6df83}{$\sim$\+Land\+Based\+Tracked} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::string $>$ \hyperlink{classrwa3_1_1_land_based_tracked_ae57d4a2861a045e2f0cc0da1e43868ed}{track\+\_\+type}
+\item 
+const std\+::string \hyperlink{classrwa3_1_1_land_based_tracked_ad7f474b8339e04a7b8a174b2366aee1b}{name\+\_\+}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_tracked_a2bc2f3ff33c23a6eca670f2ee347508e}{speed\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_tracked_a61f588ad9505ec4774568327620fba53}{width\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_tracked_aa97c13720453621211935e0e96ba3790}{length\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_tracked_a5e829ff7fae33fb1c29f5897c09311c8}{height\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_tracked_a5b9e38961ec5d2850b9bd069e897f3cd}{capacity\+\_\+} \{\}
+\item 
+int \hyperlink{classrwa3_1_1_land_based_tracked_ad52ad096c20dd018142510ce1a872ba6}{x\+\_\+}
+\item 
+int \hyperlink{classrwa3_1_1_land_based_tracked_aa6273b2cfff5572934f132cf0ada463e}{y\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file landbasedtracked.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a7afa1f901374a08d0bb23882988eef46}\label{classrwa3_1_1_land_based_tracked_a7afa1f901374a08d0bb23882988eef46}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!Land\+Based\+Tracked@{Land\+Based\+Tracked}}
+\index{Land\+Based\+Tracked@{Land\+Based\+Tracked}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Land\+Based\+Tracked()}{LandBasedTracked()}}
+{\footnotesize\ttfamily rwa3\+::\+Land\+Based\+Tracked\+::\+Land\+Based\+Tracked (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}tracked\char`\"{}},  }\item[{int}]{x = {\ttfamily 2},  }\item[{int}]{y = {\ttfamily 3} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\hyperlink{classrwa3_1_1_land_based_tracked}{Land\+Based\+Tracked} Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the robot \\
+\hline
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a018639eac0eabfcf86fc2b48e0b6df83}\label{classrwa3_1_1_land_based_tracked_a018639eac0eabfcf86fc2b48e0b6df83}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!````~Land\+Based\+Tracked@{$\sim$\+Land\+Based\+Tracked}}
+\index{````~Land\+Based\+Tracked@{$\sim$\+Land\+Based\+Tracked}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{$\sim$\+Land\+Based\+Tracked()}{~LandBasedTracked()}}
+{\footnotesize\ttfamily virtual rwa3\+::\+Land\+Based\+Tracked\+::$\sim$\+Land\+Based\+Tracked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructor for \hyperlink{classrwa3_1_1_land_based_tracked}{Land\+Based\+Tracked} 
+
+Definition at line 79 of file landbasedtracked.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a9065f381181bef7d8a4c8f4061ef2cda}\label{classrwa3_1_1_land_based_tracked_a9065f381181bef7d8a4c8f4061ef2cda}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{get\+\_\+x()}{get\_x()}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Tracked\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the x coordinate of the robot \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_af47bec53268bd409305d2f97f45411ab}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 68 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a11025bced4da296a2207e169fe328857}\label{classrwa3_1_1_land_based_tracked_a11025bced4da296a2207e169fe328857}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{get\+\_\+y()}{get\_y()}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Tracked\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the y coordinate of the robot \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_a6de17dafe355573275264f74a59f974d}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 75 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a1258bb7873abc517913e84e33effd6c4}\label{classrwa3_1_1_land_based_tracked_a1258bb7873abc517913e84e33effd6c4}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!Go\+Down@{Go\+Down}}
+\index{Go\+Down@{Go\+Down}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Go\+Down()}{GoDown()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Tracked\+::\+Go\+Down (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Go\+Down Method Moves the robot down in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_a14fcb1b05297131cd09e8a57b8de0578}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 11 of file landbasedtracked.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a36d32a38c1c7cf44c5d7aebeb18f79ff}\label{classrwa3_1_1_land_based_tracked_a36d32a38c1c7cf44c5d7aebeb18f79ff}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!Go\+Up@{Go\+Up}}
+\index{Go\+Up@{Go\+Up}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Go\+Up()}{GoUp()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Tracked\+::\+Go\+Up (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Go\+Up Method Moves the robot up in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_a955b0741cce58648074edff80ac1ce29}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 7 of file landbasedtracked.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_af1e65be827430cd9281e982409ebedcb}\label{classrwa3_1_1_land_based_tracked_af1e65be827430cd9281e982409ebedcb}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!Pick\+Up@{Pick\+Up}}
+\index{Pick\+Up@{Pick\+Up}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Pick\+Up()}{PickUp()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Tracked\+::\+Pick\+Up (\begin{DoxyParamCaption}\item[{std\+::string}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Pick\+Up Method Arm picks up an object 
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_adf0c76440e2f9d2ea5cbe7193cddfe2b}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 23 of file landbasedtracked.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a89dbcac8ec2fd64c6b168167cd6363a4}\label{classrwa3_1_1_land_based_tracked_a89dbcac8ec2fd64c6b168167cd6363a4}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!Release@{Release}}
+\index{Release@{Release}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Tracked\+::\+Release (\begin{DoxyParamCaption}\item[{std\+::string}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Release Method Arm release an object 
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_a5cae9fc0c1365b984e09b807f79089e0}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 27 of file landbasedtracked.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a6f8d74079ad047edd9f17cc541eafa86}\label{classrwa3_1_1_land_based_tracked_a6f8d74079ad047edd9f17cc541eafa86}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!Turn\+Left@{Turn\+Left}}
+\index{Turn\+Left@{Turn\+Left}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Turn\+Left()}{TurnLeft()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Tracked\+::\+Turn\+Left (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Turn\+Left Method Moves the robot left in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_a9adfb103725320c1daff9ab72b0aad08}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 15 of file landbasedtracked.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a5f6a5b1871d9f75d8a724b8d7ae44d1f}\label{classrwa3_1_1_land_based_tracked_a5f6a5b1871d9f75d8a724b8d7ae44d1f}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!Turn\+Right@{Turn\+Right}}
+\index{Turn\+Right@{Turn\+Right}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Turn\+Right()}{TurnRight()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Tracked\+::\+Turn\+Right (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Turn\+Right Method Moves the robot right in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_ab62f4e787ae7f04dd9374b4f7e84985c}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 19 of file landbasedtracked.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a5b9e38961ec5d2850b9bd069e897f3cd}\label{classrwa3_1_1_land_based_tracked_a5b9e38961ec5d2850b9bd069e897f3cd}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!capacity\+\_\+@{capacity\+\_\+}}
+\index{capacity\+\_\+@{capacity\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{capacity\+\_\+}{capacity\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Tracked\+::capacity\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot 
+
+Definition at line 90 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a5e829ff7fae33fb1c29f5897c09311c8}\label{classrwa3_1_1_land_based_tracked_a5e829ff7fae33fb1c29f5897c09311c8}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!height\+\_\+@{height\+\_\+}}
+\index{height\+\_\+@{height\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{height\+\_\+}{height\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Tracked\+::height\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot 
+
+Definition at line 89 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_aa97c13720453621211935e0e96ba3790}\label{classrwa3_1_1_land_based_tracked_aa97c13720453621211935e0e96ba3790}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!length\+\_\+@{length\+\_\+}}
+\index{length\+\_\+@{length\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{length\+\_\+}{length\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Tracked\+::length\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot 
+
+Definition at line 88 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_ad7f474b8339e04a7b8a174b2366aee1b}\label{classrwa3_1_1_land_based_tracked_ad7f474b8339e04a7b8a174b2366aee1b}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{name\+\_\+}{name\_}}
+{\footnotesize\ttfamily const std\+::string rwa3\+::\+Land\+Based\+Tracked\+::name\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Type of track mounted on the robot Name of the robot 
+
+Definition at line 85 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a2bc2f3ff33c23a6eca670f2ee347508e}\label{classrwa3_1_1_land_based_tracked_a2bc2f3ff33c23a6eca670f2ee347508e}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!speed\+\_\+@{speed\+\_\+}}
+\index{speed\+\_\+@{speed\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{speed\+\_\+}{speed\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Tracked\+::speed\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Driving speed of the robot 
+
+Definition at line 86 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_ae57d4a2861a045e2f0cc0da1e43868ed}\label{classrwa3_1_1_land_based_tracked_ae57d4a2861a045e2f0cc0da1e43868ed}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!track\+\_\+type@{track\+\_\+type}}
+\index{track\+\_\+type@{track\+\_\+type}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{track\+\_\+type}{track\_type}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::string$>$ rwa3\+::\+Land\+Based\+Tracked\+::track\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 81 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_a61f588ad9505ec4774568327620fba53}\label{classrwa3_1_1_land_based_tracked_a61f588ad9505ec4774568327620fba53}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{width\+\_\+}{width\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Tracked\+::width\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot 
+
+Definition at line 87 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_ad52ad096c20dd018142510ce1a872ba6}\label{classrwa3_1_1_land_based_tracked_ad52ad096c20dd018142510ce1a872ba6}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!x\+\_\+@{x\+\_\+}}
+\index{x\+\_\+@{x\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{x\+\_\+}{x\_}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Tracked\+::x\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+x coordinate of the robot 
+
+Definition at line 91 of file landbasedtracked.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_tracked_aa6273b2cfff5572934f132cf0ada463e}\label{classrwa3_1_1_land_based_tracked_aa6273b2cfff5572934f132cf0ada463e}} 
+\index{rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}!y\+\_\+@{y\+\_\+}}
+\index{y\+\_\+@{y\+\_\+}!rwa3\+::\+Land\+Based\+Tracked@{rwa3\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{y\+\_\+}{y\_}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Tracked\+::y\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+y coordinate of the robot 
+
+Definition at line 92 of file landbasedtracked.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+R\+W\+A3-\/\+Group3/\+Land\+Based\+Tracked/\hyperlink{landbasedtracked_8h}{landbasedtracked.\+h}\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+R\+W\+A3-\/\+Group3/\+Land\+Based\+Tracked/\hyperlink{landbasedtracked_8cpp}{landbasedtracked.\+cpp}\end{DoxyCompactItemize}

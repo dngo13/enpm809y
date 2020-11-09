@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="rwa3_ngo" targetName="rwa3_group3" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b61d309c-bc9f-46a9-9154-0330eb1176b8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LandBasedRobot/LandBasedRobot.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandBasedRobot/LandBasedRobot.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandBasedTracked/LandBasedTracked.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LandBasedWheeled/landbasedwheeled.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/landbasedwheeled.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../rwa2-ngo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Class code/Lecture 5/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/Doxyfile" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/Doxyfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/cmake-build-debug/CMakeFiles/rwa2_ngo.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/cmake-build-debug/CMakeFiles/rwa2_ngo.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/cmake-build-debug/rwa2_ngo" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/cmake-build-debug/rwa2_ngo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/files.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/files.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/globals.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/globals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/globals_func.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/globals_func.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/main_01__backup_8cpp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/main_01__backup_8cpp__incl.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/main_01__backup_8cpp__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/main_01__backup_8cpp__incl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/main_8cpp.html" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/main_8cpp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_4.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_5.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/all_5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/files_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/files_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_1.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_3.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/functions_3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/html/search/searchdata.js" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/html/search/searchdata.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/latex/files.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/latex/files.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/latex/main_01__backup_8cpp.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/latex/main_01__backup_8cpp__incl.md5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/latex/main_01__backup_8cpp__incl.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/latex/main_8cpp.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/latex/main_8cpp.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/latex/main_8cpp__incl.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/latex/main_8cpp__incl.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/latex/refman.tex" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/latex/refman.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/main _backup.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../rwa2-ngo/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../rwa2-ngo/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1jmFZYime0N4gDX1bbmbwM4unbe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.cpp" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\OneDrive UMD\OneDrive - University of Maryland\Fall 2020\ENPM809Y Intro Robot Programming\Homework\RWA3-Group3" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="rwa3_group3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="rwa3_ngo" TARGET_NAME="rwa3_group3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="rwa3_ngo" RUN_TARGET_NAME="rwa3_group3">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b61d309c-bc9f-46a9-9154-0330eb1176b8" name="Default Changelist" comment="" />
+      <created>1604401419714</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604401419714</updated>
+      <workItem from="1604401422377" duration="862000" />
+      <workItem from="1604402667540" duration="319000" />
+      <workItem from="1604403135684" duration="670000" />
+      <workItem from="1604448066726" duration="738000" />
+      <workItem from="1604478212733" duration="8219000" />
+      <workItem from="1604504089944" duration="10363000" />
+      <workItem from="1604515975158" duration="3649000" />
+      <workItem from="1604579035047" duration="3803000" />
+      <workItem from="1604619771143" duration="998000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2362" y="211" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604619905840">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2362" y="211" width="1084" height="736" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1604619905840" />
+    <state x="2660" y="287" width="424" height="482" key="FileChooserDialogImpl" timestamp="1604619782053">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1604402031181" />
+    <state x="2660" y="287" width="424" height="482" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1604619782053" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1604402683115">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1604402683115" />
+    <state x="840" y="310" key="refactoring.ChangeSignatureDialog" timestamp="1604583016663">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="840" y="310" key="refactoring.ChangeSignatureDialog/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1604583016663" />
+  </component>
+</project>

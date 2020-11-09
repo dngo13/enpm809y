@@ -1,0 +1,379 @@
+\hypertarget{classrwa3_1_1_land_based_wheeled}{}\section{rwa3\+:\+:Land\+Based\+Wheeled Class Reference}
+\label{classrwa3_1_1_land_based_wheeled}\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+
+
+{\ttfamily \#include $<$landbasedwheeled.\+h$>$}
+
+
+
+Inheritance diagram for rwa3\+:\+:Land\+Based\+Wheeled\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classrwa3_1_1_land_based_wheeled__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rwa3\+:\+:Land\+Based\+Wheeled\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classrwa3_1_1_land_based_wheeled__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrwa3_1_1_land_based_wheeled_a0a8f57819c36e24c6b2320d8088919af}{Land\+Based\+Wheeled} (std\+::string name=\char`\"{}wheeled\char`\"{}, int x=1, int y=4, int wheels=4)
+\item 
+void \hyperlink{classrwa3_1_1_land_based_wheeled_a5feba1496039c50dd2d2f87fc286f438}{Go\+Up} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_wheeled_a20208be52afe9cdb302f288be3bb7608}{Go\+Down} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_wheeled_a5a659cca86a65e89156ef30ff363de41}{Turn\+Left} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_wheeled_a90d9a8735197a7647f508c1983191590}{Turn\+Right} (int x, int y) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_wheeled_aa82a9a72c4452ba203edc4c9ef0ad6c6}{Pick\+Up} (std\+::string obj) override
+\item 
+void \hyperlink{classrwa3_1_1_land_based_wheeled_af4bd6e50a4a6d30186c969add4d9c954}{Release} (std\+::string obj) override
+\item 
+int \hyperlink{classrwa3_1_1_land_based_wheeled_a71d85c53a65516d08728284e27107f65}{get\+\_\+x} () const
+\item 
+int \hyperlink{classrwa3_1_1_land_based_wheeled_ac16ccd003eae45997e00b4eee71bae3f}{get\+\_\+y} () const
+\item 
+virtual \hyperlink{classrwa3_1_1_land_based_wheeled_a0c46a810956dbe99d0a94db8d238d4d7}{$\sim$\+Land\+Based\+Wheeled} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \hyperlink{classrwa3_1_1_land_based_wheeled_a99064bf2a79b4c18eb43810434ed934d}{wheel\+\_\+number}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::string $>$ \hyperlink{classrwa3_1_1_land_based_wheeled_a1593d4e30cea415b600b849c1af7f092}{wheel\+\_\+type}
+\item 
+const std\+::string \hyperlink{classrwa3_1_1_land_based_wheeled_a4acc5c38da9c0c69b878024af68c5f0e}{name\+\_\+}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_wheeled_a647c5fd6a33ec1b3b3a72c205fa43a3b}{speed\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_wheeled_aef4cab9229c3c625c5698497873fec9f}{width\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_wheeled_aa307fdcfc1c1b6528732a742b3ca8de9}{length\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_wheeled_ac4ae319794a7dd4500160725ebb2b3a0}{height\+\_\+} \{\}
+\item 
+double \hyperlink{classrwa3_1_1_land_based_wheeled_ae4c27098e9bfc2ebc1d8c0e418949f7e}{capacity\+\_\+} \{\}
+\item 
+int \hyperlink{classrwa3_1_1_land_based_wheeled_a89b4d09a70e5112f1bb7fbee55b660a6}{x\+\_\+}
+\item 
+int \hyperlink{classrwa3_1_1_land_based_wheeled_a553ac2a1ede03b35820f0200a7606f8e}{y\+\_\+}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file landbasedwheeled.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a0a8f57819c36e24c6b2320d8088919af}\label{classrwa3_1_1_land_based_wheeled_a0a8f57819c36e24c6b2320d8088919af}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!Land\+Based\+Wheeled@{Land\+Based\+Wheeled}}
+\index{Land\+Based\+Wheeled@{Land\+Based\+Wheeled}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{Land\+Based\+Wheeled()}{LandBasedWheeled()}}
+{\footnotesize\ttfamily rwa3\+::\+Land\+Based\+Wheeled\+::\+Land\+Based\+Wheeled (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}wheeled\char`\"{}},  }\item[{int}]{x = {\ttfamily 1},  }\item[{int}]{y = {\ttfamily 4},  }\item[{int}]{wheels = {\ttfamily 4} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\hyperlink{classrwa3_1_1_land_based_wheeled}{Land\+Based\+Wheeled} Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the robot \\
+\hline
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+{\em wheels} & number of wheels on the robot \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 18 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a0c46a810956dbe99d0a94db8d238d4d7}\label{classrwa3_1_1_land_based_wheeled_a0c46a810956dbe99d0a94db8d238d4d7}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!````~Land\+Based\+Wheeled@{$\sim$\+Land\+Based\+Wheeled}}
+\index{````~Land\+Based\+Wheeled@{$\sim$\+Land\+Based\+Wheeled}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{$\sim$\+Land\+Based\+Wheeled()}{~LandBasedWheeled()}}
+{\footnotesize\ttfamily virtual rwa3\+::\+Land\+Based\+Wheeled\+::$\sim$\+Land\+Based\+Wheeled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Destructor for \hyperlink{classrwa3_1_1_land_based_wheeled}{Land\+Based\+Wheeled} 
+
+Definition at line 78 of file landbasedwheeled.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a71d85c53a65516d08728284e27107f65}\label{classrwa3_1_1_land_based_wheeled_a71d85c53a65516d08728284e27107f65}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{get\+\_\+x()}{get\_x()}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Wheeled\+::get\+\_\+x (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the x coordinate of the robot \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_af47bec53268bd409305d2f97f45411ab}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 66 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_ac16ccd003eae45997e00b4eee71bae3f}\label{classrwa3_1_1_land_based_wheeled_ac16ccd003eae45997e00b4eee71bae3f}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{get\+\_\+y()}{get\_y()}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Wheeled\+::get\+\_\+y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get the y coordinate of the robot \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_a6de17dafe355573275264f74a59f974d}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 73 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a20208be52afe9cdb302f288be3bb7608}\label{classrwa3_1_1_land_based_wheeled_a20208be52afe9cdb302f288be3bb7608}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!Go\+Down@{Go\+Down}}
+\index{Go\+Down@{Go\+Down}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{Go\+Down()}{GoDown()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Wheeled\+::\+Go\+Down (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Go\+Down Method Moves the robot down in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_a14fcb1b05297131cd09e8a57b8de0578}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 8 of file landbasedwheeled.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a5feba1496039c50dd2d2f87fc286f438}\label{classrwa3_1_1_land_based_wheeled_a5feba1496039c50dd2d2f87fc286f438}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!Go\+Up@{Go\+Up}}
+\index{Go\+Up@{Go\+Up}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{Go\+Up()}{GoUp()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Wheeled\+::\+Go\+Up (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Go\+Up Method Moves the robot up in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_a955b0741cce58648074edff80ac1ce29}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 4 of file landbasedwheeled.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_aa82a9a72c4452ba203edc4c9ef0ad6c6}\label{classrwa3_1_1_land_based_wheeled_aa82a9a72c4452ba203edc4c9ef0ad6c6}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!Pick\+Up@{Pick\+Up}}
+\index{Pick\+Up@{Pick\+Up}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{Pick\+Up()}{PickUp()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Wheeled\+::\+Pick\+Up (\begin{DoxyParamCaption}\item[{std\+::string}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Pick\+Up Method Arm picks up an object 
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_adf0c76440e2f9d2ea5cbe7193cddfe2b}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 20 of file landbasedwheeled.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_af4bd6e50a4a6d30186c969add4d9c954}\label{classrwa3_1_1_land_based_wheeled_af4bd6e50a4a6d30186c969add4d9c954}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!Release@{Release}}
+\index{Release@{Release}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{Release()}{Release()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Wheeled\+::\+Release (\begin{DoxyParamCaption}\item[{std\+::string}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Release Method Arm release an object 
+\begin{DoxyParams}{Parameters}
+{\em obj} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classrwa3_1_1_land_based_robot_a5cae9fc0c1365b984e09b807f79089e0}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 24 of file landbasedwheeled.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a5a659cca86a65e89156ef30ff363de41}\label{classrwa3_1_1_land_based_wheeled_a5a659cca86a65e89156ef30ff363de41}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!Turn\+Left@{Turn\+Left}}
+\index{Turn\+Left@{Turn\+Left}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{Turn\+Left()}{TurnLeft()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Wheeled\+::\+Turn\+Left (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Turn\+Left Method Moves the robot left in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_a9adfb103725320c1daff9ab72b0aad08}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 12 of file landbasedwheeled.\+cpp.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a90d9a8735197a7647f508c1983191590}\label{classrwa3_1_1_land_based_wheeled_a90d9a8735197a7647f508c1983191590}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!Turn\+Right@{Turn\+Right}}
+\index{Turn\+Right@{Turn\+Right}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{Turn\+Right()}{TurnRight()}}
+{\footnotesize\ttfamily void rwa3\+::\+Land\+Based\+Wheeled\+::\+Turn\+Right (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Turn\+Right Method Moves the robot right in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classrwa3_1_1_land_based_robot_ab62f4e787ae7f04dd9374b4f7e84985c}{rwa3\+::\+Land\+Based\+Robot}.
+
+
+
+Definition at line 16 of file landbasedwheeled.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_ae4c27098e9bfc2ebc1d8c0e418949f7e}\label{classrwa3_1_1_land_based_wheeled_ae4c27098e9bfc2ebc1d8c0e418949f7e}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!capacity\+\_\+@{capacity\+\_\+}}
+\index{capacity\+\_\+@{capacity\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{capacity\+\_\+}{capacity\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Wheeled\+::capacity\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot 
+
+Definition at line 90 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_ac4ae319794a7dd4500160725ebb2b3a0}\label{classrwa3_1_1_land_based_wheeled_ac4ae319794a7dd4500160725ebb2b3a0}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!height\+\_\+@{height\+\_\+}}
+\index{height\+\_\+@{height\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{height\+\_\+}{height\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Wheeled\+::height\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot 
+
+Definition at line 89 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_aa307fdcfc1c1b6528732a742b3ca8de9}\label{classrwa3_1_1_land_based_wheeled_aa307fdcfc1c1b6528732a742b3ca8de9}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!length\+\_\+@{length\+\_\+}}
+\index{length\+\_\+@{length\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{length\+\_\+}{length\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Wheeled\+::length\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot 
+
+Definition at line 88 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a4acc5c38da9c0c69b878024af68c5f0e}\label{classrwa3_1_1_land_based_wheeled_a4acc5c38da9c0c69b878024af68c5f0e}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{name\+\_\+}{name\_}}
+{\footnotesize\ttfamily const std\+::string rwa3\+::\+Land\+Based\+Wheeled\+::name\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Type of wheels mounted on the robot Name of the robot 
+
+Definition at line 85 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a647c5fd6a33ec1b3b3a72c205fa43a3b}\label{classrwa3_1_1_land_based_wheeled_a647c5fd6a33ec1b3b3a72c205fa43a3b}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!speed\+\_\+@{speed\+\_\+}}
+\index{speed\+\_\+@{speed\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{speed\+\_\+}{speed\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Wheeled\+::speed\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Driving speed of the robot 
+
+Definition at line 86 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a99064bf2a79b4c18eb43810434ed934d}\label{classrwa3_1_1_land_based_wheeled_a99064bf2a79b4c18eb43810434ed934d}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!wheel\+\_\+number@{wheel\+\_\+number}}
+\index{wheel\+\_\+number@{wheel\+\_\+number}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{wheel\+\_\+number}{wheel\_number}}
+{\footnotesize\ttfamily const int rwa3\+::\+Land\+Based\+Wheeled\+::wheel\+\_\+number\hspace{0.3cm}{\ttfamily [protected]}}
+
+Number of wheels mounted on the robot 
+
+Definition at line 80 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a1593d4e30cea415b600b849c1af7f092}\label{classrwa3_1_1_land_based_wheeled_a1593d4e30cea415b600b849c1af7f092}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!wheel\+\_\+type@{wheel\+\_\+type}}
+\index{wheel\+\_\+type@{wheel\+\_\+type}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{wheel\+\_\+type}{wheel\_type}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::string$>$ rwa3\+::\+Land\+Based\+Wheeled\+::wheel\+\_\+type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 84 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_aef4cab9229c3c625c5698497873fec9f}\label{classrwa3_1_1_land_based_wheeled_aef4cab9229c3c625c5698497873fec9f}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{width\+\_\+}{width\_}}
+{\footnotesize\ttfamily double rwa3\+::\+Land\+Based\+Wheeled\+::width\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot 
+
+Definition at line 87 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a89b4d09a70e5112f1bb7fbee55b660a6}\label{classrwa3_1_1_land_based_wheeled_a89b4d09a70e5112f1bb7fbee55b660a6}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!x\+\_\+@{x\+\_\+}}
+\index{x\+\_\+@{x\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{x\+\_\+}{x\_}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Wheeled\+::x\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+x coordinate of the robot 
+
+Definition at line 91 of file landbasedwheeled.\+h.
+
+\mbox{\Hypertarget{classrwa3_1_1_land_based_wheeled_a553ac2a1ede03b35820f0200a7606f8e}\label{classrwa3_1_1_land_based_wheeled_a553ac2a1ede03b35820f0200a7606f8e}} 
+\index{rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}!y\+\_\+@{y\+\_\+}}
+\index{y\+\_\+@{y\+\_\+}!rwa3\+::\+Land\+Based\+Wheeled@{rwa3\+::\+Land\+Based\+Wheeled}}
+\subsubsection{\texorpdfstring{y\+\_\+}{y\_}}
+{\footnotesize\ttfamily int rwa3\+::\+Land\+Based\+Wheeled\+::y\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+y coordinate of the robot 
+
+Definition at line 92 of file landbasedwheeled.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+R\+W\+A3-\/\+Group3/\+Land\+Based\+Wheeled/\hyperlink{landbasedwheeled_8h}{landbasedwheeled.\+h}\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+R\+W\+A3-\/\+Group3/\+Land\+Based\+Wheeled/\hyperlink{landbasedwheeled_8cpp}{landbasedwheeled.\+cpp}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['outsidemaze',['OutsideMaze',['../main_8cpp.html#a8097c74a6328d61f4d4725762ece4067',1,'main.cpp']]]
+  ['display_5fmaze',['display_maze',['../main_8cpp.html#a41b5491830aa7fa26ded753af127966f',1,'main.cpp']]]
 ];

@@ -12,23 +12,21 @@ Include dependency graph for main.\+cpp\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \#define \hyperlink{main_8cpp_a3cfd3aa62338d12609f6d65bce97e9cd}{R\+O\+WS}~6
-\item 
+\begin{DoxyCompactList}\small\item\em Number of Rows for the Maze. \end{DoxyCompactList}\item 
 \#define \hyperlink{main_8cpp_ab59ad2ee1a48b83c2eef1f019ed8cc48}{C\+O\+LS}~8
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Number of Columns for the Maze. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \hyperlink{main_8cpp_a6f38718d0ba971809cc04afcaaef9727}{Wall\+There} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
+bool \hyperlink{main_8cpp_acfa4bb7c74cebff4cd34982630e27e5a}{Check\+Wall} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
 \item 
-bool \hyperlink{main_8cpp_a8097c74a6328d61f4d4725762ece4067}{Outside\+Maze} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
+bool \hyperlink{main_8cpp_a15ab7ba904c0f46588d62b302075a8c3}{Check\+Outside} (int \&x, int \&y)
 \item 
-bool \hyperlink{main_8cpp_a4f8d9a2bde4050b5c47bfc5ce20fb2c8}{Find\+Path\+North} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
+bool \hyperlink{main_8cpp_aefd146022809df49fb9ba712ecb00ffe}{Back\+Track} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
 \item 
-bool \hyperlink{main_8cpp_abf9f1c30a796219ddc75e183f0a54d86}{Find\+Path\+East} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
+void \hyperlink{main_8cpp_a41b5491830aa7fa26ded753af127966f}{display\+\_\+maze} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]})
 \item 
-bool \hyperlink{main_8cpp_a42545d9e5181eb9a01ab05d872a8adab}{Find\+Path\+South} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
-\item 
-bool \hyperlink{main_8cpp_a8dda43f7117d0422d129a703952c53ee}{Find\+Path\+West} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int \&x, int \&y)
+bool \hyperlink{main_8cpp_acafe6eccc9f6c953bc9b609f732b2273}{Find\+Path} (char maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]}, int x, int y)
 \item 
 int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
 \end{DoxyCompactItemize}
@@ -41,118 +39,150 @@ int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
 \subsubsection{\texorpdfstring{C\+O\+LS}{COLS}}
 {\footnotesize\ttfamily \#define C\+O\+LS~8}
 
-Number of columns for the array \mbox{\Hypertarget{main_8cpp_a3cfd3aa62338d12609f6d65bce97e9cd}\label{main_8cpp_a3cfd3aa62338d12609f6d65bce97e9cd}} 
+
+
+Number of Columns for the Maze. 
+
+\mbox{\Hypertarget{main_8cpp_a3cfd3aa62338d12609f6d65bce97e9cd}\label{main_8cpp_a3cfd3aa62338d12609f6d65bce97e9cd}} 
 \index{main.\+cpp@{main.\+cpp}!R\+O\+WS@{R\+O\+WS}}
 \index{R\+O\+WS@{R\+O\+WS}!main.\+cpp@{main.\+cpp}}
 \subsubsection{\texorpdfstring{R\+O\+WS}{ROWS}}
 {\footnotesize\ttfamily \#define R\+O\+WS~6}
 
-Number of rows for the array 
+
+
+Number of Rows for the Maze. 
+
+
 
 \subsection{Function Documentation}
-\mbox{\Hypertarget{main_8cpp_abf9f1c30a796219ddc75e183f0a54d86}\label{main_8cpp_abf9f1c30a796219ddc75e183f0a54d86}} 
-\index{main.\+cpp@{main.\+cpp}!Find\+Path\+East@{Find\+Path\+East}}
-\index{Find\+Path\+East@{Find\+Path\+East}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{Find\+Path\+East()}{FindPathEast()}}
-{\footnotesize\ttfamily bool Find\+Path\+East (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{main_8cpp_aefd146022809df49fb9ba712ecb00ffe}\label{main_8cpp_aefd146022809df49fb9ba712ecb00ffe}} 
+\index{main.\+cpp@{main.\+cpp}!Back\+Track@{Back\+Track}}
+\index{Back\+Track@{Back\+Track}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Back\+Track()}{BackTrack()}}
+{\footnotesize\ttfamily bool Back\+Track (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
 
-Find\+Path\+East Function\+: Checks if the space in the east direction from the current position is not a wall and not outside of the maze. If it meets these conditions, then it moves east and places a plus sign. 
+Function to backtrack if the coordinate has been visited and there is no path found 
 \begin{DoxyParams}{Parameters}
-{\em maze} & the character array for the maze \\
+{\em maze} & the 2D array of character for the maze \\
 \hline
-{\em x} & the x-\/coordinate of the position to the east \\
+{\em x} & integer of the x coordinate \\
 \hline
-{\em y} & the y-\/coordinate of the position to the east \\
+{\em y} & integer of the y coordinate \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{main_8cpp_a4f8d9a2bde4050b5c47bfc5ce20fb2c8}\label{main_8cpp_a4f8d9a2bde4050b5c47bfc5ce20fb2c8}} 
-\index{main.\+cpp@{main.\+cpp}!Find\+Path\+North@{Find\+Path\+North}}
-\index{Find\+Path\+North@{Find\+Path\+North}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{Find\+Path\+North()}{FindPathNorth()}}
-{\footnotesize\ttfamily bool Find\+Path\+North (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+\begin{DoxyReturn}{Returns}
 
-Find\+Path\+North Function\+: Checks if the space in the north direction from the current position is not a wall and not outside of the maze. If it meets these conditions, then it moves north and places a plus sign. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a15ab7ba904c0f46588d62b302075a8c3}\label{main_8cpp_a15ab7ba904c0f46588d62b302075a8c3}} 
+\index{main.\+cpp@{main.\+cpp}!Check\+Outside@{Check\+Outside}}
+\index{Check\+Outside@{Check\+Outside}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Check\+Outside()}{CheckOutside()}}
+{\footnotesize\ttfamily bool Check\+Outside (\begin{DoxyParamCaption}\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+
+Check\+Outside Function\+: Function to check if the desired direction is outside of the maze 
 \begin{DoxyParams}{Parameters}
-{\em maze} & the character array for the maze \\
+{\em maze} & the 2D array of character for the maze \\
 \hline
-{\em x} & the x-\/coordinate of the position to the north \\
+{\em x} & integer of the x coordinate \\
 \hline
-{\em y} & the y-\/coordinate of the position to the north \\
+{\em y} & integer of the y coordinate \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{main_8cpp_a42545d9e5181eb9a01ab05d872a8adab}\label{main_8cpp_a42545d9e5181eb9a01ab05d872a8adab}} 
-\index{main.\+cpp@{main.\+cpp}!Find\+Path\+South@{Find\+Path\+South}}
-\index{Find\+Path\+South@{Find\+Path\+South}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{Find\+Path\+South()}{FindPathSouth()}}
-{\footnotesize\ttfamily bool Find\+Path\+South (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+\begin{DoxyReturn}{Returns}
 
-Find\+Path\+South Function\+: Checks if the space in the south direction from the current position is not a wall and not outside of the maze. If it meets these conditions, then it moves south and places a plus sign. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_acfa4bb7c74cebff4cd34982630e27e5a}\label{main_8cpp_acfa4bb7c74cebff4cd34982630e27e5a}} 
+\index{main.\+cpp@{main.\+cpp}!Check\+Wall@{Check\+Wall}}
+\index{Check\+Wall@{Check\+Wall}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Check\+Wall()}{CheckWall()}}
+{\footnotesize\ttfamily bool Check\+Wall (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+
+Check\+Wall Function\+: Function to check if there is a wall in the desired direction 
 \begin{DoxyParams}{Parameters}
-{\em maze} & the character array for the maze \\
+{\em maze} & the 2D array of character for the maze \\
 \hline
-{\em x} & the x-\/coordinate of the position to the south \\
+{\em x} & integer of the x coordinate \\
 \hline
-{\em y} & the y-\/coordinate of the position to the south \\
+{\em y} & integer of the y coordinate \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{main_8cpp_a8dda43f7117d0422d129a703952c53ee}\label{main_8cpp_a8dda43f7117d0422d129a703952c53ee}} 
-\index{main.\+cpp@{main.\+cpp}!Find\+Path\+West@{Find\+Path\+West}}
-\index{Find\+Path\+West@{Find\+Path\+West}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{Find\+Path\+West()}{FindPathWest()}}
-{\footnotesize\ttfamily bool Find\+Path\+West (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+\begin{DoxyReturn}{Returns}
 
-Find\+Path\+West Function\+: Checks if the space in the west direction from the current position is not a wall and not outside of the maze. If it meets these conditions, then it moves west and places a plus sign. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{main_8cpp_a41b5491830aa7fa26ded753af127966f}\label{main_8cpp_a41b5491830aa7fa26ded753af127966f}} 
+\index{main.\+cpp@{main.\+cpp}!display\+\_\+maze@{display\+\_\+maze}}
+\index{display\+\_\+maze@{display\+\_\+maze}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{display\+\_\+maze()}{display\_maze()}}
+{\footnotesize\ttfamily void display\+\_\+maze (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]} }\end{DoxyParamCaption})}
+
+Function to display the maze 
 \begin{DoxyParams}{Parameters}
-{\em maze} & the character array for the maze \\
-\hline
-{\em x} & the x-\/coordinate of the position to the west \\
-\hline
-{\em y} & the y-\/coordinate of the position to the west \\
+{\em maze} & the 2d array of characters for the maze \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\mbox{\Hypertarget{main_8cpp_acafe6eccc9f6c953bc9b609f732b2273}\label{main_8cpp_acafe6eccc9f6c953bc9b609f732b2273}} 
+\index{main.\+cpp@{main.\+cpp}!Find\+Path@{Find\+Path}}
+\index{Find\+Path@{Find\+Path}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{Find\+Path()}{FindPath()}}
+{\footnotesize\ttfamily bool Find\+Path (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Find\+Path Function is a recursive function to iterate through the maze by checking North, East, South, and West. It checks if there is a wall at the position or if its outside of the maze, then proceeds by placing a + sign at the position and updates. 
+\begin{DoxyParams}{Parameters}
+{\em maze} & the 2D array of character for the maze \\
+\hline
+{\em x} & integer of the x coordinate \\
+\hline
+{\em y} & integer of the y coordinate \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+If the x, y is at the goal position
+
+If the coordinates is not at the goal position
+
+Declare outside variable
+
+Declare wall variable
+
+Declare backtrack variable
+
+If x, y is outside of the maze or is a wall
+
+Mark path
+
+Checking North
+
+Checking East
+
+Checking South
+
+Checking West
+
+Backtrack by setting the coordinate back to . \mbox{\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
 \index{main.\+cpp@{main.\+cpp}!main@{main}}
 \index{main@{main}!main.\+cpp@{main.\+cpp}}
 \subsubsection{\texorpdfstring{main()}{main()}}
 {\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Initialize the variables for the starting position
+Maze array is reversed to print it out with respect to the coordinate system
 
-User Input
+Initialize the variables for the starting position
 
 Initialize temporary variables s\+\_\+x and s\+\_\+y to save the new input
 
-This while loop checks if the desired starting position is valid in which the coordinates are not of a wall.
+User Input
 
-had to swap y and x position because how C++ reads columns first
+While Loop to determine if start and goal position are inside of the maze and not a wall
 
-This while loop checks if the desired starting position is outside of the maze.
+This if loop checks if the desired starting position is outside of the maze.
 
-This while loop checks if the desired goal position is outside of the maze.\mbox{\Hypertarget{main_8cpp_a8097c74a6328d61f4d4725762ece4067}\label{main_8cpp_a8097c74a6328d61f4d4725762ece4067}} 
-\index{main.\+cpp@{main.\+cpp}!Outside\+Maze@{Outside\+Maze}}
-\index{Outside\+Maze@{Outside\+Maze}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{Outside\+Maze()}{OutsideMaze()}}
-{\footnotesize\ttfamily bool Outside\+Maze (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+set the s array to coordinates x, y
 
-Outside\+Maze Function\+: Function to check if the desired direction is outside of the maze 
-\begin{DoxyParams}{Parameters}
-{\em maze} & the character array for the maze \\
-\hline
-{\em x} & the x-\/coordinate of the position \\
-\hline
-{\em y} & the y-\/coordinate of the position \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{main_8cpp_a6f38718d0ba971809cc04afcaaef9727}\label{main_8cpp_a6f38718d0ba971809cc04afcaaef9727}} 
-\index{main.\+cpp@{main.\+cpp}!Wall\+There@{Wall\+There}}
-\index{Wall\+There@{Wall\+There}!main.\+cpp@{main.\+cpp}}
-\subsubsection{\texorpdfstring{Wall\+There()}{WallThere()}}
-{\footnotesize\ttfamily bool Wall\+There (\begin{DoxyParamCaption}\item[{char}]{maze\mbox{[}6\mbox{]}\mbox{[}8\mbox{]},  }\item[{int \&}]{x,  }\item[{int \&}]{y }\end{DoxyParamCaption})}
+Initialize temporary variables g\+\_\+x and g\+\_\+y to save the new input
 
-Wall\+There Function\+: Function to check if there is a wall in the desired direction 
-\begin{DoxyParams}{Parameters}
-{\em x} & the x-\/coordinate of the position \\
-\hline
-{\em y} & the y-\/coordinate of the position \\
-\hline
-\end{DoxyParams}
+This if loop checks if the desired goal position is outside of the maze.
+
+set the g array to coordinates x, y 
