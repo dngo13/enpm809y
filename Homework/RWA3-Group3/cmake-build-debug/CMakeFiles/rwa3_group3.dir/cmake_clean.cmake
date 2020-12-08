@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rwa3_group3.dir/LandBasedRobot/LandBasedRobot.cpp.o"
-  "CMakeFiles/rwa3_group3.dir/LandBasedTracked/landbasedtracked.cpp.o"
-  "CMakeFiles/rwa3_group3.dir/LandBasedWheeled/landbasedwheeled.cpp.o"
-  "CMakeFiles/rwa3_group3.dir/main.cpp.o"
-  "rwa3_group3"
+  "CMakeFiles/rwa3_group3.dir/LandBasedRobot/LandBasedRobot.cpp.obj"
+  "CMakeFiles/rwa3_group3.dir/LandBasedTracked/landbasedtracked.cpp.obj"
+  "CMakeFiles/rwa3_group3.dir/LandBasedWheeled/landbasedwheeled.cpp.obj"
+  "CMakeFiles/rwa3_group3.dir/main.cpp.obj"
+  "librwa3_group3.dll.a"
+  "rwa3_group3.exe"
+  "rwa3_group3.exe.manifest"
   "rwa3_group3.pdb"
 )
 

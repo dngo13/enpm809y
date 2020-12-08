@@ -1,1 +1,3 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/rwa3_group3.dir/main.cpp.o CMakeFiles/rwa3_group3.dir/LandBasedRobot/LandBasedRobot.cpp.o CMakeFiles/rwa3_group3.dir/LandBasedWheeled/landbasedwheeled.cpp.o CMakeFiles/rwa3_group3.dir/LandBasedTracked/landbasedtracked.cpp.o  -o rwa3_group3 
+"E:\CLION\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\rwa3_group3.dir/objects.a
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\rwa3_group3.dir/objects.a @CMakeFiles\rwa3_group3.dir\objects1.rsp
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE -g   -Wl,--whole-archive CMakeFiles\rwa3_group3.dir/objects.a -Wl,--no-whole-archive  -o rwa3_group3.exe -Wl,--out-implib,librwa3_group3.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\rwa3_group3.dir\linklibs.rsp

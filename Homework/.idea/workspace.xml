@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated />
   </component>
-  <component name="CMakeSettings">
+  <component name="CMakeSettings" AUTO_RELOAD="true">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="acead14c-17a2-4e8e-8954-1f219bf25a28" name="Default Changelist" comment="" />
+    <list default="true" id="acead14c-17a2-4e8e-8954-1f219bf25a28" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Final-Project-Group3/CMakeLists.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Final-Project-Group3/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Class code/Lecture 5/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Homework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final-Project-Group3/809Y_Final_Project_Fall2020.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final-Project-Group3/api.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final-Project-Group3/api.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Final-Project-Group3/mms-cpp/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Final-Project-Group3/mms-cpp/Main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +46,18 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1iGZ56KT9slnFoEjUHcgYZ8SB6A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,9 +68,14 @@
     <property name="cf.first.check.clang-format" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -44,16 +88,53 @@
       <option name="presentableId" value="Default" />
       <updated>1601535702090</updated>
       <workItem from="1601535703105" duration="43000" />
+      <workItem from="1605000063614" duration="4001000" />
+      <workItem from="1605005018692" duration="1082000" />
+      <workItem from="1605006250925" duration="37000" />
+      <workItem from="1605006309000" duration="75000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="2381" y="296" width="424" height="511" key="FileChooserDialogImpl" timestamp="1601535742636">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="418" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605005077265">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
+    <state x="418" y="198" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1605005077265" />
+    <state x="461" y="316" width="424" height="482" key="FileChooserDialogImpl" timestamp="1605006361609">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="461" y="316" width="424" height="482" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1605006361609" />
     <state x="2381" y="296" width="424" height="511" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.1053@1920.0.1920.1080" timestamp="1601535742636" />
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel" timestamp="1605006381742">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="640" height="204" key="ImportCMakeProjectWizard.bottomPanel/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1605006381742" />
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel" timestamp="1605006381742">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="640" height="476" key="ImportCMakeProjectWizard.topPanel/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1605006381742" />
+    <state x="449" y="175" key="SettingsEditor" timestamp="1605002394173">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="449" y="175" key="SettingsEditor/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1605002394173" />
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup" timestamp="1605001862105">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="623" y="239" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1605001862105" />
   </component>
 </project>
