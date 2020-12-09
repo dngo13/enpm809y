@@ -1,0 +1,385 @@
+\hypertarget{classfp_1_1_algorithm}{}\section{fp\+:\+:Algorithm Class Reference}
+\label{classfp_1_1_algorithm}\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+
+
+{\ttfamily \#include $<$Algorithm.\+h$>$}
+
+
+
+Collaboration diagram for fp\+:\+:Algorithm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classfp_1_1_algorithm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfp_1_1_algorithm_1_1_position}{Position}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfp_1_1_algorithm_ab91291b423ce58ba86e317112ca0c5ba}{Update\+Direction} (char \&current\+\_\+direction, char turn)
+\item 
+void \hyperlink{classfp_1_1_algorithm_a31c6fa52ea1a75e1a9b3179cb018b6ef}{Update\+Position} (char current\+\_\+direction, char move, \hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&curr\+\_\+pos)
+\item 
+void \hyperlink{classfp_1_1_algorithm_ac6e4cae1f140d0155f2feaaaf1d287c1}{Solve} ()
+\item 
+void \hyperlink{classfp_1_1_algorithm_a5883d1cbb2d20803903de4bb0873f359}{D\+FS} (bool start, char \&current\+\_\+direction, const std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot} $>$ \&robot)
+\item 
+bool \hyperlink{classfp_1_1_algorithm_a169e9e4e400a85687aa6554a3cbd2e04}{Reset\+Pressed} ()
+\item 
+void \hyperlink{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}{reset} ()
+\item 
+void \hyperlink{classfp_1_1_algorithm_a434cfecd6898f4e89ba632433fa19afd}{Call\+Set\+Maze} ()
+\item 
+void \hyperlink{classfp_1_1_algorithm_aecb33f136eb5c2cb6130f9b26a4320b0}{Check\+Wall} (\hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&\hyperlink{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}{position}, char \&current\+\_\+direction)
+\item 
+void \hyperlink{classfp_1_1_algorithm_ab12d9f15d25fe35e3e7733570c626413}{Find\+Next\+Node} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}, char current\+\_\+direction, bool \hyperlink{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}{path\+\_\+blocked\+\_\+})
+\item 
+bool \hyperlink{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}{Check\+Path} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_ac3672498d86469ee445fe66a140952cb}{next\+\_\+node}, std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \hyperlink{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}{visited\+\_\+node\+\_\+})
+\item 
+\hyperlink{classfp_1_1_algorithm_adaa1af41614b0d95c2a940cc87c68a2e}{Algorithm} ()
+\item 
+\hyperlink{classfp_1_1_algorithm_aefb8012b9e6457191d7fc16affe5a700}{$\sim$\+Algorithm} ()=default
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}{log} (const std\+::string \&text)
+\item 
+static void \hyperlink{classfp_1_1_algorithm_a69fe7bd633b0e23593e7808babe4e90d}{Initialize\+Maze} (\hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position} \&\hyperlink{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}{position}, char \&\hyperlink{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}{direction})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position} \hyperlink{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}{position}
+\item 
+struct \hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position} \hyperlink{classfp_1_1_algorithm_a94d3b3797f19988f49fbda76013c3899}{current\+\_\+pos}
+\item 
+std\+::stack$<$ std\+::array$<$ int, 2 $>$ $>$ \hyperlink{classfp_1_1_algorithm_a3a646d05e1d457e73608134417b55113}{stack\+\_\+}
+\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot} $>$ \hyperlink{classfp_1_1_algorithm_a9937e133d060b6216a30055dc400ac10}{robot\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfp_1_1_algorithm_ac289d75b6850d5ad4a888360b3cfeda9}{Clear\+Stack} ()
+\item 
+void \hyperlink{classfp_1_1_algorithm_aaa34202f81b3b971590cc7608f0665df}{Move\+Left} ()
+\item 
+void \hyperlink{classfp_1_1_algorithm_a038bec51ce281896e229908b0822b749}{Move\+Right} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfp_1_1_maze}{Maze} \hyperlink{classfp_1_1_algorithm_a5eaa9074986ebf65f2f549f78eedd0f2}{maze}
+\item 
+char \hyperlink{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}{direction} \{\textquotesingle{}n\textquotesingle{}\}
+\item 
+std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \hyperlink{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}{visited\+\_\+node\+\_\+}
+\item 
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}
+\item 
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_ac3672498d86469ee445fe66a140952cb}{next\+\_\+node}
+\item 
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_ac90048223f33b81908e9c7367ec355bc}{parent\+\_\+node}
+\item 
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a9fcc4bf2df720fef33da5705cd317480}{goal\+\_\+1}
+\item 
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_aa01beb678f2db28d33e32f1060341bcc}{goal\+\_\+2}
+\item 
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a8e8b41783484c3a30ae85bcd978d5e46}{goal\+\_\+3}
+\item 
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a9832306da6877eba455ef5160c4a7f86}{goal\+\_\+4}
+\item 
+bool \hyperlink{classfp_1_1_algorithm_a2a305831ed2802bbb7e9149eda9dd637}{path\+\_\+found} \{\}
+\item 
+bool \hyperlink{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}{path\+\_\+blocked\+\_\+} \{true\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfp_1_1_algorithm_adaa1af41614b0d95c2a940cc87c68a2e}\label{classfp_1_1_algorithm_adaa1af41614b0d95c2a940cc87c68a2e}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Algorithm@{Algorithm}}
+\index{Algorithm@{Algorithm}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Algorithm()}{Algorithm()}}
+{\footnotesize\ttfamily fp\+::\+Algorithm\+::\+Algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_aefb8012b9e6457191d7fc16affe5a700}\label{classfp_1_1_algorithm_aefb8012b9e6457191d7fc16affe5a700}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!````~Algorithm@{$\sim$\+Algorithm}}
+\index{````~Algorithm@{$\sim$\+Algorithm}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{$\sim$\+Algorithm()}{~Algorithm()}}
+{\footnotesize\ttfamily fp\+::\+Algorithm\+::$\sim$\+Algorithm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfp_1_1_algorithm_a434cfecd6898f4e89ba632433fa19afd}\label{classfp_1_1_algorithm_a434cfecd6898f4e89ba632433fa19afd}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Call\+Set\+Maze@{Call\+Set\+Maze}}
+\index{Call\+Set\+Maze@{Call\+Set\+Maze}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Call\+Set\+Maze()}{CallSetMaze()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Call\+Set\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to set the center and perimeter of the maze \mbox{\Hypertarget{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}\label{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Check\+Path@{Check\+Path}}
+\index{Check\+Path@{Check\+Path}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Check\+Path()}{CheckPath()}}
+{\footnotesize\ttfamily bool fp\+::\+Algorithm\+::\+Check\+Path (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{next\+\_\+node,  }\item[{std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$}]{visited\+\_\+node\+\_\+ }\end{DoxyParamCaption})}
+
+Check\+Path function sees if the next node has been visited or a wall 
+\begin{DoxyParams}{Parameters}
+{\em path\+\_\+blocked\+\_\+} & boolean to see if path is blocked by a wall \\
+\hline
+{\em next\+\_\+node} & next node array in terms of position \\
+\hline
+{\em visited\+\_\+node\+\_\+} & 16x16 boolean array to determine if a node has been visited \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true or false if path can be moved to 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_algorithm_aecb33f136eb5c2cb6130f9b26a4320b0}\label{classfp_1_1_algorithm_aecb33f136eb5c2cb6130f9b26a4320b0}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Check\+Wall@{Check\+Wall}}
+\index{Check\+Wall@{Check\+Wall}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Check\+Wall()}{CheckWall()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Check\+Wall (\begin{DoxyParamCaption}\item[{\hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&}]{position,  }\item[{char \&}]{current\+\_\+direction }\end{DoxyParamCaption})}
+
+Check\+Wall is a method to check if there is a wall in the front, left, and right side of the robot 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+position} & current position of the robot \\
+\hline
+{\em direction} & direction that the robot is facing \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_algorithm_ac289d75b6850d5ad4a888360b3cfeda9}\label{classfp_1_1_algorithm_ac289d75b6850d5ad4a888360b3cfeda9}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Clear\+Stack@{Clear\+Stack}}
+\index{Clear\+Stack@{Clear\+Stack}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Clear\+Stack()}{ClearStack()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Clear\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a5883d1cbb2d20803903de4bb0873f359}\label{classfp_1_1_algorithm_a5883d1cbb2d20803903de4bb0873f359}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!D\+FS@{D\+FS}}
+\index{D\+FS@{D\+FS}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{D\+F\+S()}{DFS()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+D\+FS (\begin{DoxyParamCaption}\item[{bool}]{start,  }\item[{char \&}]{current\+\_\+direction,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot} $>$ \&}]{robot }\end{DoxyParamCaption})}
+
+Depth First Search \hyperlink{classfp_1_1_algorithm}{Algorithm} to traverse through the maze and save visited nodes 
+\begin{DoxyParams}{Parameters}
+{\em start} & tells the algorithm if first time starting it \\
+\hline
+{\em current\+\_\+direction} & current direction of the robot \\
+\hline
+{\em robot} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_algorithm_ab12d9f15d25fe35e3e7733570c626413}\label{classfp_1_1_algorithm_ab12d9f15d25fe35e3e7733570c626413}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Find\+Next\+Node@{Find\+Next\+Node}}
+\index{Find\+Next\+Node@{Find\+Next\+Node}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Find\+Next\+Node()}{FindNextNode()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Find\+Next\+Node (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{curr\+\_\+node,  }\item[{char}]{current\+\_\+direction,  }\item[{bool}]{path\+\_\+blocked\+\_\+ }\end{DoxyParamCaption})}
+
+Find\+Next\+Node function checks 1 node forward in every direction and sees if the path is blocked or is visited to determine which direction the robot can go to 
+\begin{DoxyParams}{Parameters}
+{\em curr\+\_\+node} & current node array, for x and y position \\
+\hline
+{\em current\+\_\+direction} & current direction of the robot \\
+\hline
+{\em path\+\_\+blocked\+\_\+} & boolean to see if the path is blocked \\
+\hline
+\end{DoxyParams}
+Arrays to define the possible direction of the nodes , north, south, east, west\mbox{\Hypertarget{classfp_1_1_algorithm_a69fe7bd633b0e23593e7808babe4e90d}\label{classfp_1_1_algorithm_a69fe7bd633b0e23593e7808babe4e90d}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Initialize\+Maze@{Initialize\+Maze}}
+\index{Initialize\+Maze@{Initialize\+Maze}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Initialize\+Maze()}{InitializeMaze()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Initialize\+Maze (\begin{DoxyParamCaption}\item[{\hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position} \&}]{position,  }\item[{char \&}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initializes the maze with default settings 
+\begin{DoxyParams}{Parameters}
+{\em position} & \\
+\hline
+{\em direction} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}\label{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!log@{log}}
+\index{log@{log}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::log (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A method to print out text to the maze simulator 
+\begin{DoxyParams}{Parameters}
+{\em text} & \hyperlink{_algorithm_8cpp}{Algorithm.\+cpp} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_algorithm_aaa34202f81b3b971590cc7608f0665df}\label{classfp_1_1_algorithm_aaa34202f81b3b971590cc7608f0665df}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Move\+Left@{Move\+Left}}
+\index{Move\+Left@{Move\+Left}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Move\+Left()}{MoveLeft()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a038bec51ce281896e229908b0822b749}\label{classfp_1_1_algorithm_a038bec51ce281896e229908b0822b749}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Move\+Right@{Move\+Right}}
+\index{Move\+Right@{Move\+Right}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Move\+Right()}{MoveRight()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}\label{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!reset@{reset}}
+\index{reset@{reset}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Resets the maze if the button is pressed \mbox{\Hypertarget{classfp_1_1_algorithm_a169e9e4e400a85687aa6554a3cbd2e04}\label{classfp_1_1_algorithm_a169e9e4e400a85687aa6554a3cbd2e04}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Reset\+Pressed@{Reset\+Pressed}}
+\index{Reset\+Pressed@{Reset\+Pressed}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Reset\+Pressed()}{ResetPressed()}}
+{\footnotesize\ttfamily bool fp\+::\+Algorithm\+::\+Reset\+Pressed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+If the reset button is pressed \begin{DoxyReturn}{Returns}
+reset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_algorithm_ac6e4cae1f140d0155f2feaaaf1d287c1}\label{classfp_1_1_algorithm_ac6e4cae1f140d0155f2feaaaf1d287c1}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Solve@{Solve}}
+\index{Solve@{Solve}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Starts the setup for the maze and algorithm \mbox{\Hypertarget{classfp_1_1_algorithm_ab91291b423ce58ba86e317112ca0c5ba}\label{classfp_1_1_algorithm_ab91291b423ce58ba86e317112ca0c5ba}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Update\+Direction@{Update\+Direction}}
+\index{Update\+Direction@{Update\+Direction}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Update\+Direction()}{UpdateDirection()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Update\+Direction (\begin{DoxyParamCaption}\item[{char \&}]{current\+\_\+direction,  }\item[{char}]{turn }\end{DoxyParamCaption})}
+
+Function to update the direction of the robot 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+direction} & char direction of N/\+S/\+E/W \\
+\hline
+{\em turn} & char to specify if the robot is turning left or right \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_algorithm_a31c6fa52ea1a75e1a9b3179cb018b6ef}\label{classfp_1_1_algorithm_a31c6fa52ea1a75e1a9b3179cb018b6ef}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Update\+Position@{Update\+Position}}
+\index{Update\+Position@{Update\+Position}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Update\+Position()}{UpdatePosition()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{char}]{current\+\_\+direction,  }\item[{char}]{move,  }\item[{\hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&}]{curr\+\_\+pos }\end{DoxyParamCaption})}
+
+Function to update the position of the robot 
+\begin{DoxyParams}{Parameters}
+{\em current\+\_\+direction} & char direction of N/\+S/\+E/W \\
+\hline
+{\em move} & \\
+\hline
+{\em curr\+\_\+pos} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}\label{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!curr\+\_\+node@{curr\+\_\+node}}
+\index{curr\+\_\+node@{curr\+\_\+node}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{curr\+\_\+node}{curr\_node}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::curr\+\_\+node\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a94d3b3797f19988f49fbda76013c3899}\label{classfp_1_1_algorithm_a94d3b3797f19988f49fbda76013c3899}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!current\+\_\+pos@{current\+\_\+pos}}
+\index{current\+\_\+pos@{current\+\_\+pos}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{current\+\_\+pos}{current\_pos}}
+{\footnotesize\ttfamily struct \hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position}  fp\+::\+Algorithm\+::current\+\_\+pos}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}\label{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!direction@{direction}}
+\index{direction@{direction}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily char fp\+::\+Algorithm\+::direction \{\textquotesingle{}n\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a9fcc4bf2df720fef33da5705cd317480}\label{classfp_1_1_algorithm_a9fcc4bf2df720fef33da5705cd317480}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!goal\+\_\+1@{goal\+\_\+1}}
+\index{goal\+\_\+1@{goal\+\_\+1}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{goal\+\_\+1}{goal\_1}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::goal\+\_\+1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_aa01beb678f2db28d33e32f1060341bcc}\label{classfp_1_1_algorithm_aa01beb678f2db28d33e32f1060341bcc}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!goal\+\_\+2@{goal\+\_\+2}}
+\index{goal\+\_\+2@{goal\+\_\+2}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{goal\+\_\+2}{goal\_2}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::goal\+\_\+2\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a8e8b41783484c3a30ae85bcd978d5e46}\label{classfp_1_1_algorithm_a8e8b41783484c3a30ae85bcd978d5e46}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!goal\+\_\+3@{goal\+\_\+3}}
+\index{goal\+\_\+3@{goal\+\_\+3}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{goal\+\_\+3}{goal\_3}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::goal\+\_\+3\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a9832306da6877eba455ef5160c4a7f86}\label{classfp_1_1_algorithm_a9832306da6877eba455ef5160c4a7f86}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!goal\+\_\+4@{goal\+\_\+4}}
+\index{goal\+\_\+4@{goal\+\_\+4}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{goal\+\_\+4}{goal\_4}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::goal\+\_\+4\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a5eaa9074986ebf65f2f549f78eedd0f2}\label{classfp_1_1_algorithm_a5eaa9074986ebf65f2f549f78eedd0f2}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!maze@{maze}}
+\index{maze@{maze}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{maze}{maze}}
+{\footnotesize\ttfamily \hyperlink{classfp_1_1_maze}{Maze} fp\+::\+Algorithm\+::maze\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_ac3672498d86469ee445fe66a140952cb}\label{classfp_1_1_algorithm_ac3672498d86469ee445fe66a140952cb}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!next\+\_\+node@{next\+\_\+node}}
+\index{next\+\_\+node@{next\+\_\+node}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{next\+\_\+node}{next\_node}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::next\+\_\+node\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_ac90048223f33b81908e9c7367ec355bc}\label{classfp_1_1_algorithm_ac90048223f33b81908e9c7367ec355bc}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!parent\+\_\+node@{parent\+\_\+node}}
+\index{parent\+\_\+node@{parent\+\_\+node}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{parent\+\_\+node}{parent\_node}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::parent\+\_\+node\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}\label{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!path\+\_\+blocked\+\_\+@{path\+\_\+blocked\+\_\+}}
+\index{path\+\_\+blocked\+\_\+@{path\+\_\+blocked\+\_\+}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{path\+\_\+blocked\+\_\+}{path\_blocked\_}}
+{\footnotesize\ttfamily bool fp\+::\+Algorithm\+::path\+\_\+blocked\+\_\+ \{true\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a2a305831ed2802bbb7e9149eda9dd637}\label{classfp_1_1_algorithm_a2a305831ed2802bbb7e9149eda9dd637}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!path\+\_\+found@{path\+\_\+found}}
+\index{path\+\_\+found@{path\+\_\+found}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{path\+\_\+found}{path\_found}}
+{\footnotesize\ttfamily bool fp\+::\+Algorithm\+::path\+\_\+found \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}\label{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!position@{position}}
+\index{position@{position}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily struct \hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position} fp\+::\+Algorithm\+::position}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a9937e133d060b6216a30055dc400ac10}\label{classfp_1_1_algorithm_a9937e133d060b6216a30055dc400ac10}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!robot\+\_\+@{robot\+\_\+}}
+\index{robot\+\_\+@{robot\+\_\+}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{robot\+\_\+}{robot\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot}$>$ fp\+::\+Algorithm\+::robot\+\_\+}
+
+Shared pointer for the robot \mbox{\Hypertarget{classfp_1_1_algorithm_a3a646d05e1d457e73608134417b55113}\label{classfp_1_1_algorithm_a3a646d05e1d457e73608134417b55113}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!stack\+\_\+@{stack\+\_\+}}
+\index{stack\+\_\+@{stack\+\_\+}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{stack\+\_\+}{stack\_}}
+{\footnotesize\ttfamily std\+::stack$<$std\+::array$<$int, 2$>$ $>$ fp\+::\+Algorithm\+::stack\+\_\+}
+
+Stack where nodes will be pushed \mbox{\Hypertarget{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}\label{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!visited\+\_\+node\+\_\+@{visited\+\_\+node\+\_\+}}
+\index{visited\+\_\+node\+\_\+@{visited\+\_\+node\+\_\+}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{visited\+\_\+node\+\_\+}{visited\_node\_}}
+{\footnotesize\ttfamily std\+::array$<$std\+::array $<$bool, 16$>$, 16$>$ fp\+::\+Algorithm\+::visited\+\_\+node\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Defining the nodes of arrays 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Algorithm/\hyperlink{_algorithm_8h}{Algorithm.\+h}\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Algorithm/\hyperlink{_algorithm_8cpp}{Algorithm.\+cpp}\end{DoxyCompactItemize}

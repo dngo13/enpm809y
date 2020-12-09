@@ -1,0 +1,92 @@
+\hypertarget{classfp_1_1_algorithm}{}\section{fp\+:\+:Algorithm Class Reference}
+\label{classfp_1_1_algorithm}\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+
+
+{\ttfamily \#include $<$Algorithm.\+h$>$}
+
+
+
+Collaboration diagram for fp\+:\+:Algorithm\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classfp_1_1_algorithm__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfp_1_1_algorithm_1_1_position}{Position}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfp_1_1_algorithm_ab91291b423ce58ba86e317112ca0c5ba}{Update\+Direction} (char \&current\+\_\+direction, char turn)
+\item 
+void \hyperlink{classfp_1_1_algorithm_ad2d339d7e95c730bb5f44511fa3c1246}{Update\+Position} (char current\+\_\+direction, char move, \hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&\hyperlink{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}{position})
+\item 
+void \hyperlink{classfp_1_1_algorithm_ac6e4cae1f140d0155f2feaaaf1d287c1}{Solve} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}{log} (const std\+::string \&text)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position} \hyperlink{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}{position}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}{direction} \{\textquotesingle{}N\textquotesingle{}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}\label{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!log@{log}}
+\index{log@{log}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::log (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\hyperlink{_algorithm_8cpp}{Algorithm.\+cpp} \mbox{\Hypertarget{classfp_1_1_algorithm_ac6e4cae1f140d0155f2feaaaf1d287c1}\label{classfp_1_1_algorithm_ac6e4cae1f140d0155f2feaaaf1d287c1}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Solve@{Solve}}
+\index{Solve@{Solve}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Solve()}{Solve()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Solve (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$ In class example of moving in the maze \mbox{\Hypertarget{classfp_1_1_algorithm_ab91291b423ce58ba86e317112ca0c5ba}\label{classfp_1_1_algorithm_ab91291b423ce58ba86e317112ca0c5ba}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Update\+Direction@{Update\+Direction}}
+\index{Update\+Direction@{Update\+Direction}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Update\+Direction()}{UpdateDirection()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Update\+Direction (\begin{DoxyParamCaption}\item[{char \&}]{current\+\_\+direction,  }\item[{char}]{turn }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_ad2d339d7e95c730bb5f44511fa3c1246}\label{classfp_1_1_algorithm_ad2d339d7e95c730bb5f44511fa3c1246}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Update\+Position@{Update\+Position}}
+\index{Update\+Position@{Update\+Position}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Update\+Position()}{UpdatePosition()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{char}]{current\+\_\+direction,  }\item[{char}]{move,  }\item[{\hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&}]{position }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}\label{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!direction@{direction}}
+\index{direction@{direction}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily char fp\+::\+Algorithm\+::direction \{\textquotesingle{}N\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}\label{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!position@{position}}
+\index{position@{position}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily struct \hyperlink{structfp_1_1_algorithm_1_1_position}{fp\+::\+Algorithm\+::\+Position} fp\+::\+Algorithm\+::position}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Algorithm/\hyperlink{_algorithm_8h}{Algorithm.\+h}\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Algorithm/\hyperlink{_algorithm_8cpp}{Algorithm.\+cpp}\end{DoxyCompactItemize}

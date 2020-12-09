@@ -1,0 +1,325 @@
+\hypertarget{classfp_1_1_land_based_robot}{}\section{fp\+:\+:Land\+Based\+Robot Class Reference}
+\label{classfp_1_1_land_based_robot}\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+
+
+{\ttfamily \#include $<$Land\+Based\+Robot.\+h$>$}
+
+
+
+Inheritance diagram for fp\+:\+:Land\+Based\+Robot\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{classfp_1_1_land_based_robot__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a44fed3a00505f6679ff8505aebae4505}{get\+\_\+speed} () const
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a523b439167030a7ab1e0e7f6c8d42315}{get\+\_\+width} () const
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_adb03fbded9a3b0553301bcc0322cb1c1}{get\+\_\+length} () const
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_ac77253c989c417ee26654541c50669d4}{get\+\_\+height} () const
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a24c0f6d395f3dfd6bdbcf5a2a9801de1}{get\+\_\+capacity} () const
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_abddbc887170ed70d2c719cfdf9fed0b7}{set\+\_\+speed} (double \hyperlink{classfp_1_1_land_based_robot_a098908304491425d6264e59d9412e696}{speed})
+\item 
+\hyperlink{classfp_1_1_land_based_robot_ada2929900b46143a62ce8f0f53ada0f8}{Land\+Based\+Robot} (std\+::string name=\char`\"{}robot\char`\"{}, int x=0, int y=0, char direction=\textquotesingle{}N\textquotesingle{})
+\item 
+virtual char \hyperlink{classfp_1_1_land_based_robot_a50841b6e40d4e92832770d26b427fea2}{Get\+Direction} ()=0
+\item 
+virtual void \hyperlink{classfp_1_1_land_based_robot_a25ed5c4c524e68cc983104a8da57599b}{Move\+Forward} (int x, int y)=0
+\item 
+virtual void \hyperlink{classfp_1_1_land_based_robot_a359e1012e9093475b7a1b0d38e41a118}{Turn\+Left} (int x, int y)=0
+\item 
+virtual void \hyperlink{classfp_1_1_land_based_robot_a7360e4084bc5254f72ab0d3612644907}{Turn\+Right} (int x, int y)=0
+\item 
+virtual \hyperlink{classfp_1_1_land_based_robot_acfe49650459e4e6c72b87e6eff1072d9}{$\sim$\+Land\+Based\+Robot} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a098908304491425d6264e59d9412e696}{speed} = \hyperlink{classfp_1_1_land_based_robot_a44fed3a00505f6679ff8505aebae4505}{get\+\_\+speed}()
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a4e49ce0ab6b8b0e4a998d5ce82303f8d}{width} = \hyperlink{classfp_1_1_land_based_robot_a523b439167030a7ab1e0e7f6c8d42315}{get\+\_\+width}()
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_aa96f1f19673132a99ce0b417faed83d3}{length} = \hyperlink{classfp_1_1_land_based_robot_adb03fbded9a3b0553301bcc0322cb1c1}{get\+\_\+length}()
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a6b1ece64bf32bbe509042ccb80a2ab33}{height} = \hyperlink{classfp_1_1_land_based_robot_ac77253c989c417ee26654541c50669d4}{get\+\_\+height}()
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_af906410bad105b30865b9a02fdd350f9}{capacity} = \hyperlink{classfp_1_1_land_based_robot_a24c0f6d395f3dfd6bdbcf5a2a9801de1}{get\+\_\+capacity}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \hyperlink{classfp_1_1_land_based_robot_a548e8bdaead3c8ddbcaa9eac1121d1c5}{name\+\_\+}
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_ae969157e5f910ed0a85198dc7f6c3cef}{speed\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_aae605323e9ce63f29dcded204421b1fc}{width\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a9475d5886f329c92e68f0d86b4da58c0}{length\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a34238a27d9055c416a3e6cfedc8ed248}{height\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_robot_a542d90c7c62899e3c3cf28791bbb6c8e}{capacity\+\_\+} \{\}
+\item 
+int \hyperlink{classfp_1_1_land_based_robot_a55c2b5865fd60fb0158a135031f8b271}{x\+\_\+}
+\item 
+int \hyperlink{classfp_1_1_land_based_robot_a130cfd6ad383116076dc891ee3a52671}{y\+\_\+}
+\item 
+char \hyperlink{classfp_1_1_land_based_robot_adc8e6123fa8ffe86576e46000b0ae779}{direction\+\_\+} \{\textquotesingle{}N\textquotesingle{}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_ada2929900b46143a62ce8f0f53ada0f8}\label{classfp_1_1_land_based_robot_ada2929900b46143a62ce8f0f53ada0f8}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!Land\+Based\+Robot@{Land\+Based\+Robot}}
+\index{Land\+Based\+Robot@{Land\+Based\+Robot}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{Land\+Based\+Robot()}{LandBasedRobot()}}
+{\footnotesize\ttfamily fp\+::\+Land\+Based\+Robot\+::\+Land\+Based\+Robot (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}robot\char`\"{}},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{char}]{direction = {\ttfamily \textquotesingle{}N\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\hyperlink{classfp_1_1_land_based_robot}{Land\+Based\+Robot} Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the robot \\
+\hline
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+{\em direction} & direction that the robot is facing in the maze \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_acfe49650459e4e6c72b87e6eff1072d9}\label{classfp_1_1_land_based_robot_acfe49650459e4e6c72b87e6eff1072d9}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!````~Land\+Based\+Robot@{$\sim$\+Land\+Based\+Robot}}
+\index{````~Land\+Based\+Robot@{$\sim$\+Land\+Based\+Robot}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{$\sim$\+Land\+Based\+Robot()}{~LandBasedRobot()}}
+{\footnotesize\ttfamily virtual fp\+::\+Land\+Based\+Robot\+::$\sim$\+Land\+Based\+Robot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+$<$ Destructor for \hyperlink{classfp_1_1_land_based_robot}{Land\+Based\+Robot} 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a24c0f6d395f3dfd6bdbcf5a2a9801de1}\label{classfp_1_1_land_based_robot_a24c0f6d395f3dfd6bdbcf5a2a9801de1}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!get\+\_\+capacity@{get\+\_\+capacity}}
+\index{get\+\_\+capacity@{get\+\_\+capacity}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{get\+\_\+capacity()}{get\_capacity()}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::get\+\_\+capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Accessor function for capacity \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_ac77253c989c417ee26654541c50669d4}\label{classfp_1_1_land_based_robot_ac77253c989c417ee26654541c50669d4}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!get\+\_\+height@{get\+\_\+height}}
+\index{get\+\_\+height@{get\+\_\+height}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{get\+\_\+height()}{get\_height()}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::get\+\_\+height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Accessor function for height \begin{DoxyReturn}{Returns}
+height\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_adb03fbded9a3b0553301bcc0322cb1c1}\label{classfp_1_1_land_based_robot_adb03fbded9a3b0553301bcc0322cb1c1}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!get\+\_\+length@{get\+\_\+length}}
+\index{get\+\_\+length@{get\+\_\+length}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{get\+\_\+length()}{get\_length()}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::get\+\_\+length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Accessor function for length \begin{DoxyReturn}{Returns}
+length\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a44fed3a00505f6679ff8505aebae4505}\label{classfp_1_1_land_based_robot_a44fed3a00505f6679ff8505aebae4505}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!get\+\_\+speed@{get\+\_\+speed}}
+\index{get\+\_\+speed@{get\+\_\+speed}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{get\+\_\+speed()}{get\_speed()}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::get\+\_\+speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Accessor function for speed \begin{DoxyReturn}{Returns}
+speed\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a523b439167030a7ab1e0e7f6c8d42315}\label{classfp_1_1_land_based_robot_a523b439167030a7ab1e0e7f6c8d42315}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!get\+\_\+width@{get\+\_\+width}}
+\index{get\+\_\+width@{get\+\_\+width}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{get\+\_\+width()}{get\_width()}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::get\+\_\+width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Accessor function for width \begin{DoxyReturn}{Returns}
+width\+\_\+ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a50841b6e40d4e92832770d26b427fea2}\label{classfp_1_1_land_based_robot_a50841b6e40d4e92832770d26b427fea2}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily char fp\+::\+Land\+Based\+Robot\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual Get\+Direction Method Get the direction of the robot in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classfp_1_1_land_based_tracked_a3e6ba37a5c5bf8f2b4abb19907e5e9b8}{fp\+::\+Land\+Based\+Tracked}, and \hyperlink{classfp_1_1_land_based_wheeled_adaafaceb388374ffb9cec28301665492}{fp\+::\+Land\+Based\+Wheeled}.
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a25ed5c4c524e68cc983104a8da57599b}\label{classfp_1_1_land_based_robot_a25ed5c4c524e68cc983104a8da57599b}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!Move\+Forward@{Move\+Forward}}
+\index{Move\+Forward@{Move\+Forward}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{Move\+Forward()}{MoveForward()}}
+{\footnotesize\ttfamily void fp\+::\+Land\+Based\+Robot\+::\+Move\+Forward (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Virtual Move\+Forward Method Moves the robot forward in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classfp_1_1_land_based_tracked_a02145c5c1642c961f9c0cca1a4cf1b70}{fp\+::\+Land\+Based\+Tracked}, and \hyperlink{classfp_1_1_land_based_wheeled_a9c6a668ce9233468141516c8ea678593}{fp\+::\+Land\+Based\+Wheeled}.
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_abddbc887170ed70d2c719cfdf9fed0b7}\label{classfp_1_1_land_based_robot_abddbc887170ed70d2c719cfdf9fed0b7}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!set\+\_\+speed@{set\+\_\+speed}}
+\index{set\+\_\+speed@{set\+\_\+speed}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{set\+\_\+speed()}{set\_speed()}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::set\+\_\+speed (\begin{DoxyParamCaption}\item[{double}]{speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Mutator (setter) function for speed 
+\begin{DoxyParams}{Parameters}
+{\em speed} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns nothing 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a359e1012e9093475b7a1b0d38e41a118}\label{classfp_1_1_land_based_robot_a359e1012e9093475b7a1b0d38e41a118}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!Turn\+Left@{Turn\+Left}}
+\index{Turn\+Left@{Turn\+Left}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{Turn\+Left()}{TurnLeft()}}
+{\footnotesize\ttfamily void fp\+::\+Land\+Based\+Robot\+::\+Turn\+Left (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Turn\+Left Method Rotate the the robot 90 degrees counter-\/clockwise 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classfp_1_1_land_based_tracked_a2b106dbbb108cb97f212ed661e8d244b}{fp\+::\+Land\+Based\+Tracked}, and \hyperlink{classfp_1_1_land_based_wheeled_ad7e32884e0747b347d5d74db171c2854}{fp\+::\+Land\+Based\+Wheeled}.
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a7360e4084bc5254f72ab0d3612644907}\label{classfp_1_1_land_based_robot_a7360e4084bc5254f72ab0d3612644907}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!Turn\+Right@{Turn\+Right}}
+\index{Turn\+Right@{Turn\+Right}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{Turn\+Right()}{TurnRight()}}
+{\footnotesize\ttfamily void fp\+::\+Land\+Based\+Robot\+::\+Turn\+Right (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Turn\+Right Method Rotate the the robot 90 degrees clockwise 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{classfp_1_1_land_based_tracked_a00cc1731e59096f3fe490f108ebc7012}{fp\+::\+Land\+Based\+Tracked}, and \hyperlink{classfp_1_1_land_based_wheeled_a759f28e9ca00e77cc0e2f2ce2f524811}{fp\+::\+Land\+Based\+Wheeled}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_af906410bad105b30865b9a02fdd350f9}\label{classfp_1_1_land_based_robot_af906410bad105b30865b9a02fdd350f9}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!capacity@{capacity}}
+\index{capacity@{capacity}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::capacity = \hyperlink{classfp_1_1_land_based_robot_a24c0f6d395f3dfd6bdbcf5a2a9801de1}{get\+\_\+capacity}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a542d90c7c62899e3c3cf28791bbb6c8e}\label{classfp_1_1_land_based_robot_a542d90c7c62899e3c3cf28791bbb6c8e}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!capacity\+\_\+@{capacity\+\_\+}}
+\index{capacity\+\_\+@{capacity\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{capacity\+\_\+}{capacity\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::capacity\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_robot_adc8e6123fa8ffe86576e46000b0ae779}\label{classfp_1_1_land_based_robot_adc8e6123fa8ffe86576e46000b0ae779}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!direction\+\_\+@{direction\+\_\+}}
+\index{direction\+\_\+@{direction\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{direction\+\_\+}{direction\_}}
+{\footnotesize\ttfamily char fp\+::\+Land\+Based\+Robot\+::direction\+\_\+ \{\textquotesingle{}N\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Direction that the robot is facing in the maze \mbox{\Hypertarget{classfp_1_1_land_based_robot_a6b1ece64bf32bbe509042ccb80a2ab33}\label{classfp_1_1_land_based_robot_a6b1ece64bf32bbe509042ccb80a2ab33}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!height@{height}}
+\index{height@{height}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::height = \hyperlink{classfp_1_1_land_based_robot_ac77253c989c417ee26654541c50669d4}{get\+\_\+height}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a34238a27d9055c416a3e6cfedc8ed248}\label{classfp_1_1_land_based_robot_a34238a27d9055c416a3e6cfedc8ed248}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!height\+\_\+@{height\+\_\+}}
+\index{height\+\_\+@{height\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{height\+\_\+}{height\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::height\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_robot_aa96f1f19673132a99ce0b417faed83d3}\label{classfp_1_1_land_based_robot_aa96f1f19673132a99ce0b417faed83d3}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!length@{length}}
+\index{length@{length}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::length = \hyperlink{classfp_1_1_land_based_robot_adb03fbded9a3b0553301bcc0322cb1c1}{get\+\_\+length}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_a9475d5886f329c92e68f0d86b4da58c0}\label{classfp_1_1_land_based_robot_a9475d5886f329c92e68f0d86b4da58c0}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!length\+\_\+@{length\+\_\+}}
+\index{length\+\_\+@{length\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{length\+\_\+}{length\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::length\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_robot_a548e8bdaead3c8ddbcaa9eac1121d1c5}\label{classfp_1_1_land_based_robot_a548e8bdaead3c8ddbcaa9eac1121d1c5}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{name\+\_\+}{name\_}}
+{\footnotesize\ttfamily const std\+::string fp\+::\+Land\+Based\+Robot\+::name\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$ Attributes Name of the robot \mbox{\Hypertarget{classfp_1_1_land_based_robot_a098908304491425d6264e59d9412e696}\label{classfp_1_1_land_based_robot_a098908304491425d6264e59d9412e696}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!speed@{speed}}
+\index{speed@{speed}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::speed = \hyperlink{classfp_1_1_land_based_robot_a44fed3a00505f6679ff8505aebae4505}{get\+\_\+speed}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_ae969157e5f910ed0a85198dc7f6c3cef}\label{classfp_1_1_land_based_robot_ae969157e5f910ed0a85198dc7f6c3cef}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!speed\+\_\+@{speed\+\_\+}}
+\index{speed\+\_\+@{speed\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{speed\+\_\+}{speed\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::speed\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Driving speed of the robot \mbox{\Hypertarget{classfp_1_1_land_based_robot_a4e49ce0ab6b8b0e4a998d5ce82303f8d}\label{classfp_1_1_land_based_robot_a4e49ce0ab6b8b0e4a998d5ce82303f8d}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!width@{width}}
+\index{width@{width}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::width = \hyperlink{classfp_1_1_land_based_robot_a523b439167030a7ab1e0e7f6c8d42315}{get\+\_\+width}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_robot_aae605323e9ce63f29dcded204421b1fc}\label{classfp_1_1_land_based_robot_aae605323e9ce63f29dcded204421b1fc}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{width\+\_\+}{width\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Robot\+::width\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_robot_a55c2b5865fd60fb0158a135031f8b271}\label{classfp_1_1_land_based_robot_a55c2b5865fd60fb0158a135031f8b271}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!x\+\_\+@{x\+\_\+}}
+\index{x\+\_\+@{x\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{x\+\_\+}{x\_}}
+{\footnotesize\ttfamily int fp\+::\+Land\+Based\+Robot\+::x\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+x coordinate of the robot \mbox{\Hypertarget{classfp_1_1_land_based_robot_a130cfd6ad383116076dc891ee3a52671}\label{classfp_1_1_land_based_robot_a130cfd6ad383116076dc891ee3a52671}} 
+\index{fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}!y\+\_\+@{y\+\_\+}}
+\index{y\+\_\+@{y\+\_\+}!fp\+::\+Land\+Based\+Robot@{fp\+::\+Land\+Based\+Robot}}
+\subsubsection{\texorpdfstring{y\+\_\+}{y\_}}
+{\footnotesize\ttfamily int fp\+::\+Land\+Based\+Robot\+::y\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+y coordinate of the robot 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Land\+Based\+Robot/\hyperlink{_land_based_robot_8h}{Land\+Based\+Robot.\+h}\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Land\+Based\+Robot/\hyperlink{_land_based_robot_8cpp}{Land\+Based\+Robot.\+cpp}\end{DoxyCompactItemize}

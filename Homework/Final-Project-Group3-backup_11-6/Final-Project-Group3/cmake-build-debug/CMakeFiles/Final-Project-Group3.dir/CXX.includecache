@@ -1,0 +1,56 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/API/api.h
+string
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Algorithm/Algorithm.cpp
+Algorithm.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Algorithm/Algorithm.h
+iostream
+-
+string
+-
+../API/api.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/API/api.h
+../Maze/Maze.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Maze/Maze.h
+../Maze/Maze.cpp
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Maze/Maze.cpp
+../LandBasedRobot/LandBasedRobot.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.h
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Algorithm/Algorithm.h
+iostream
+-
+memory
+-
+../LandBasedRobot/LandBasedRobot.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.h
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.h
+string
+-
+iostream
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Maze/Maze.cpp
+Maze.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Maze/Maze.h
+../Algorithm/Algorithm.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Algorithm/Algorithm.h
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Maze/Maze.h
+../API/api.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/API/api.h
+../Algorithm/Algorithm.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/Algorithm/Algorithm.h
+iostream
+-
+

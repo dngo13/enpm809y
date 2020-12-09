@@ -1,0 +1,20 @@
+cmake_minimum_required(VERSION 3.17)
+project(Final_Project_Group3)
+
+set(CMAKE_CXX_STANDARD 14)
+
+include_directories(API)
+include_directories(src/LandBasedRobot)
+include_directories(src/LandBasedTracked)
+include_directories(src/LandBasedWheeled)
+
+add_executable(Final_Project_Group3
+        API/api.cpp
+        API/api.h
+        src/LandBasedRobot/LandBasedRobot.cpp
+        src/LandBasedRobot/LandBasedRobot.h
+        src/LandBasedTracked/landbasedtracked.cpp
+        src/LandBasedTracked/landbasedtracked.h
+        src/LandBasedWheeled/landbasedwheeled.cpp
+        src/LandBasedWheeled/landbasedwheeled.h
+        main.cpp)

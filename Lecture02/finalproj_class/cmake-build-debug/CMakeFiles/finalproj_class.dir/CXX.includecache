@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/API/api.h
+string
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Lecture02/finalproj_class/main.cpp
+iostream
+-
+../../Homework/Final-Project-Group3/src/API/api.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/API/api.h
+

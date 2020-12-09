@@ -1,0 +1,271 @@
+\hypertarget{classfp_1_1_land_based_tracked}{}\section{fp\+:\+:Land\+Based\+Tracked Class Reference}
+\label{classfp_1_1_land_based_tracked}\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+
+
+{\ttfamily \#include $<$landbasedtracked.\+h$>$}
+
+
+
+Inheritance diagram for fp\+:\+:Land\+Based\+Tracked\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classfp_1_1_land_based_tracked__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for fp\+:\+:Land\+Based\+Tracked\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=195pt]{classfp_1_1_land_based_tracked__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfp_1_1_land_based_tracked_adde9b81138a39b13b4b05386c1a6b3a3}{Land\+Based\+Tracked} (std\+::string name=\char`\"{}tracked\char`\"{}, int \hyperlink{classfp_1_1_land_based_robot_a305bb45b4478ab51080fa0d7fc7bc2d7}{x}=0, int \hyperlink{classfp_1_1_land_based_robot_ad1ff889538680eba6bc6eb135b4ccd63}{y}=0, char direction=\textquotesingle{}N\textquotesingle{})
+\item 
+virtual char \hyperlink{classfp_1_1_land_based_tracked_a3e6ba37a5c5bf8f2b4abb19907e5e9b8}{Get\+Direction} () override
+\item 
+virtual void \hyperlink{classfp_1_1_land_based_tracked_a3f4290b614fe0e31e361366e71501cea}{Move\+Forward} (int \hyperlink{classfp_1_1_land_based_robot_a305bb45b4478ab51080fa0d7fc7bc2d7}{x}, int \hyperlink{classfp_1_1_land_based_robot_ad1ff889538680eba6bc6eb135b4ccd63}{y}, char direction) override
+\item 
+void \hyperlink{classfp_1_1_land_based_tracked_a63141c32f8f81c301be4126297103a41}{Turn\+Left} () override
+\item 
+void \hyperlink{classfp_1_1_land_based_tracked_a813613a1eaa7a0782ea254a167d97da3}{Turn\+Right} () override
+\item 
+virtual \hyperlink{classfp_1_1_land_based_tracked_a60b4e1da43f053a5a0351d52d79785e0}{$\sim$\+Land\+Based\+Tracked} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_a08b67f2f7c1da6db1c4d6cf4de689573}{speed} = \hyperlink{classfp_1_1_land_based_robot_a44fed3a00505f6679ff8505aebae4505}{Land\+Based\+Robot\+::get\+\_\+speed}()
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_a82b74ecf56d8d84b001fcb4f1ae92dad}{width} = \hyperlink{classfp_1_1_land_based_robot_a523b439167030a7ab1e0e7f6c8d42315}{Land\+Based\+Robot\+::get\+\_\+width}()
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_a5c81a68468defb336f0c207069290cc2}{length} = \hyperlink{classfp_1_1_land_based_robot_adb03fbded9a3b0553301bcc0322cb1c1}{Land\+Based\+Robot\+::get\+\_\+length}()
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_a23bbcb88d1b14513c786017dc1ceee66}{height} = \hyperlink{classfp_1_1_land_based_robot_ac77253c989c417ee26654541c50669d4}{Land\+Based\+Robot\+::get\+\_\+height}()
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_a13d92f0fa31949ca268678a7c339d4f7}{capacity} = \hyperlink{classfp_1_1_land_based_robot_a24c0f6d395f3dfd6bdbcf5a2a9801de1}{Land\+Based\+Robot\+::get\+\_\+capacity}()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ std\+::string $>$ \hyperlink{classfp_1_1_land_based_tracked_a2e5f75cdd135af0f33a369058de3b15c}{track\+\_\+type\+\_\+}
+\item 
+const std\+::string \hyperlink{classfp_1_1_land_based_tracked_abf54193cc934e3e3833a2ed3767eee9a}{name\+\_\+}
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_ae4203781ac58381e57fe189d6bf9908a}{speed\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_ac3f7d3a782facd141e5a604a6ba150f8}{width\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_ab6a7476275dfee103cfd8b1f5817d79a}{length\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_a5f9e0d15ade5738525ccef9d8899a1b2}{height\+\_\+} \{\}
+\item 
+double \hyperlink{classfp_1_1_land_based_tracked_a608f59273d6f0882809fa11dbb1ca325}{capacity\+\_\+} \{\}
+\item 
+int \hyperlink{classfp_1_1_land_based_tracked_a8001133ebf0739a851c283248b7bf3f3}{x\+\_\+} \{\}
+\item 
+int \hyperlink{classfp_1_1_land_based_tracked_ae8f41c1bd340a84c7704b3bd7281ae79}{y\+\_\+} \{\}
+\item 
+char \hyperlink{classfp_1_1_land_based_tracked_a2efd39a637cc76891f6e8fd1eb84420e}{direction\+\_\+} \{\textquotesingle{}N\textquotesingle{}\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_adde9b81138a39b13b4b05386c1a6b3a3}\label{classfp_1_1_land_based_tracked_adde9b81138a39b13b4b05386c1a6b3a3}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!Land\+Based\+Tracked@{Land\+Based\+Tracked}}
+\index{Land\+Based\+Tracked@{Land\+Based\+Tracked}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Land\+Based\+Tracked()}{LandBasedTracked()}}
+{\footnotesize\ttfamily fp\+::\+Land\+Based\+Tracked\+::\+Land\+Based\+Tracked (\begin{DoxyParamCaption}\item[{std\+::string}]{name = {\ttfamily \char`\"{}tracked\char`\"{}},  }\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{char}]{direction = {\ttfamily \textquotesingle{}N\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+\hyperlink{classfp_1_1_land_based_tracked}{Land\+Based\+Tracked} Constructor 
+\begin{DoxyParams}{Parameters}
+{\em name} & name of the robot \\
+\hline
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+{\em direction} & direction that the robot is facing in the maze \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a60b4e1da43f053a5a0351d52d79785e0}\label{classfp_1_1_land_based_tracked_a60b4e1da43f053a5a0351d52d79785e0}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!````~Land\+Based\+Tracked@{$\sim$\+Land\+Based\+Tracked}}
+\index{````~Land\+Based\+Tracked@{$\sim$\+Land\+Based\+Tracked}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{$\sim$\+Land\+Based\+Tracked()}{~LandBasedTracked()}}
+{\footnotesize\ttfamily virtual fp\+::\+Land\+Based\+Tracked\+::$\sim$\+Land\+Based\+Tracked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a3e6ba37a5c5bf8f2b4abb19907e5e9b8}\label{classfp_1_1_land_based_tracked_a3e6ba37a5c5bf8f2b4abb19907e5e9b8}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Get\+Direction()}{GetDirection()}}
+{\footnotesize\ttfamily char fp\+::\+Land\+Based\+Tracked\+::\+Get\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Get\+Direction Method Get the direction of the robot in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classfp_1_1_land_based_robot_a50841b6e40d4e92832770d26b427fea2}{fp\+::\+Land\+Based\+Robot}.
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a3f4290b614fe0e31e361366e71501cea}\label{classfp_1_1_land_based_tracked_a3f4290b614fe0e31e361366e71501cea}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!Move\+Forward@{Move\+Forward}}
+\index{Move\+Forward@{Move\+Forward}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Move\+Forward()}{MoveForward()}}
+{\footnotesize\ttfamily void fp\+::\+Land\+Based\+Tracked\+::\+Move\+Forward (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Move\+Forward Method Moves the robot forward in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classfp_1_1_land_based_robot_a370d28ef28553e8e7a56b1ea68884bb0}{fp\+::\+Land\+Based\+Robot}.
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a63141c32f8f81c301be4126297103a41}\label{classfp_1_1_land_based_tracked_a63141c32f8f81c301be4126297103a41}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!Turn\+Left@{Turn\+Left}}
+\index{Turn\+Left@{Turn\+Left}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Turn\+Left()}{TurnLeft()}}
+{\footnotesize\ttfamily void fp\+::\+Land\+Based\+Tracked\+::\+Turn\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Turn\+Left Method Moves the robot left in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classfp_1_1_land_based_robot_acd135f01e40d4f2e32739156b56c722f}{fp\+::\+Land\+Based\+Robot}.
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a813613a1eaa7a0782ea254a167d97da3}\label{classfp_1_1_land_based_tracked_a813613a1eaa7a0782ea254a167d97da3}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!Turn\+Right@{Turn\+Right}}
+\index{Turn\+Right@{Turn\+Right}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{Turn\+Right()}{TurnRight()}}
+{\footnotesize\ttfamily void fp\+::\+Land\+Based\+Tracked\+::\+Turn\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Virtual Turn\+Right Method Moves the robot right in the maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & x coordinate of the robot \\
+\hline
+{\em y} & y coordinate of the robot\+Destructor for \hyperlink{classfp_1_1_land_based_tracked}{Land\+Based\+Tracked} \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classfp_1_1_land_based_robot_aa905ba0f9b2670bea138df1e5d6836ff}{fp\+::\+Land\+Based\+Robot}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a13d92f0fa31949ca268678a7c339d4f7}\label{classfp_1_1_land_based_tracked_a13d92f0fa31949ca268678a7c339d4f7}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!capacity@{capacity}}
+\index{capacity@{capacity}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{capacity}{capacity}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::capacity = \hyperlink{classfp_1_1_land_based_robot_a24c0f6d395f3dfd6bdbcf5a2a9801de1}{Land\+Based\+Robot\+::get\+\_\+capacity}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a608f59273d6f0882809fa11dbb1ca325}\label{classfp_1_1_land_based_tracked_a608f59273d6f0882809fa11dbb1ca325}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!capacity\+\_\+@{capacity\+\_\+}}
+\index{capacity\+\_\+@{capacity\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{capacity\+\_\+}{capacity\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::capacity\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_tracked_a2efd39a637cc76891f6e8fd1eb84420e}\label{classfp_1_1_land_based_tracked_a2efd39a637cc76891f6e8fd1eb84420e}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!direction\+\_\+@{direction\+\_\+}}
+\index{direction\+\_\+@{direction\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{direction\+\_\+}{direction\_}}
+{\footnotesize\ttfamily char fp\+::\+Land\+Based\+Tracked\+::direction\+\_\+ \{\textquotesingle{}N\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Direction that the robot is facing in the maze \mbox{\Hypertarget{classfp_1_1_land_based_tracked_a23bbcb88d1b14513c786017dc1ceee66}\label{classfp_1_1_land_based_tracked_a23bbcb88d1b14513c786017dc1ceee66}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!height@{height}}
+\index{height@{height}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::height = \hyperlink{classfp_1_1_land_based_robot_ac77253c989c417ee26654541c50669d4}{Land\+Based\+Robot\+::get\+\_\+height}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a5f9e0d15ade5738525ccef9d8899a1b2}\label{classfp_1_1_land_based_tracked_a5f9e0d15ade5738525ccef9d8899a1b2}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!height\+\_\+@{height\+\_\+}}
+\index{height\+\_\+@{height\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{height\+\_\+}{height\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::height\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Height of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_tracked_a5c81a68468defb336f0c207069290cc2}\label{classfp_1_1_land_based_tracked_a5c81a68468defb336f0c207069290cc2}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!length@{length}}
+\index{length@{length}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::length = \hyperlink{classfp_1_1_land_based_robot_adb03fbded9a3b0553301bcc0322cb1c1}{Land\+Based\+Robot\+::get\+\_\+length}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_ab6a7476275dfee103cfd8b1f5817d79a}\label{classfp_1_1_land_based_tracked_ab6a7476275dfee103cfd8b1f5817d79a}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!length\+\_\+@{length\+\_\+}}
+\index{length\+\_\+@{length\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{length\+\_\+}{length\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::length\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_tracked_abf54193cc934e3e3833a2ed3767eee9a}\label{classfp_1_1_land_based_tracked_abf54193cc934e3e3833a2ed3767eee9a}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!name\+\_\+@{name\+\_\+}}
+\index{name\+\_\+@{name\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{name\+\_\+}{name\_}}
+{\footnotesize\ttfamily const std\+::string fp\+::\+Land\+Based\+Tracked\+::name\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+Type of track mounted on the robot Name of the robot \mbox{\Hypertarget{classfp_1_1_land_based_tracked_a08b67f2f7c1da6db1c4d6cf4de689573}\label{classfp_1_1_land_based_tracked_a08b67f2f7c1da6db1c4d6cf4de689573}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!speed@{speed}}
+\index{speed@{speed}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::speed = \hyperlink{classfp_1_1_land_based_robot_a44fed3a00505f6679ff8505aebae4505}{Land\+Based\+Robot\+::get\+\_\+speed}()}
+
+The following are accessors to get the required derived attributes from the base class (\hyperlink{classfp_1_1_land_based_robot}{Land\+Based\+Robot}) \mbox{\Hypertarget{classfp_1_1_land_based_tracked_ae4203781ac58381e57fe189d6bf9908a}\label{classfp_1_1_land_based_tracked_ae4203781ac58381e57fe189d6bf9908a}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!speed\+\_\+@{speed\+\_\+}}
+\index{speed\+\_\+@{speed\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{speed\+\_\+}{speed\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::speed\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Driving speed of the robot \mbox{\Hypertarget{classfp_1_1_land_based_tracked_a2e5f75cdd135af0f33a369058de3b15c}\label{classfp_1_1_land_based_tracked_a2e5f75cdd135af0f33a369058de3b15c}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!track\+\_\+type\+\_\+@{track\+\_\+type\+\_\+}}
+\index{track\+\_\+type\+\_\+@{track\+\_\+type\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{track\+\_\+type\+\_\+}{track\_type\_}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$std\+::string$>$ fp\+::\+Land\+Based\+Tracked\+::track\+\_\+type\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_a82b74ecf56d8d84b001fcb4f1ae92dad}\label{classfp_1_1_land_based_tracked_a82b74ecf56d8d84b001fcb4f1ae92dad}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!width@{width}}
+\index{width@{width}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::width = \hyperlink{classfp_1_1_land_based_robot_a523b439167030a7ab1e0e7f6c8d42315}{Land\+Based\+Robot\+::get\+\_\+width}()}
+
+\mbox{\Hypertarget{classfp_1_1_land_based_tracked_ac3f7d3a782facd141e5a604a6ba150f8}\label{classfp_1_1_land_based_tracked_ac3f7d3a782facd141e5a604a6ba150f8}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!width\+\_\+@{width\+\_\+}}
+\index{width\+\_\+@{width\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{width\+\_\+}{width\_}}
+{\footnotesize\ttfamily double fp\+::\+Land\+Based\+Tracked\+::width\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+Width of the base of the robot \mbox{\Hypertarget{classfp_1_1_land_based_tracked_a8001133ebf0739a851c283248b7bf3f3}\label{classfp_1_1_land_based_tracked_a8001133ebf0739a851c283248b7bf3f3}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!x\+\_\+@{x\+\_\+}}
+\index{x\+\_\+@{x\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{x\+\_\+}{x\_}}
+{\footnotesize\ttfamily int fp\+::\+Land\+Based\+Tracked\+::x\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+x coordinate of the robot \mbox{\Hypertarget{classfp_1_1_land_based_tracked_ae8f41c1bd340a84c7704b3bd7281ae79}\label{classfp_1_1_land_based_tracked_ae8f41c1bd340a84c7704b3bd7281ae79}} 
+\index{fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}!y\+\_\+@{y\+\_\+}}
+\index{y\+\_\+@{y\+\_\+}!fp\+::\+Land\+Based\+Tracked@{fp\+::\+Land\+Based\+Tracked}}
+\subsubsection{\texorpdfstring{y\+\_\+}{y\_}}
+{\footnotesize\ttfamily int fp\+::\+Land\+Based\+Tracked\+::y\+\_\+ \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+y coordinate of the robot 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Land\+Based\+Tracked/\hyperlink{landbasedtracked_8h}{landbasedtracked.\+h}\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+Land\+Based\+Tracked/\hyperlink{landbasedtracked_8cpp}{landbasedtracked.\+cpp}\end{DoxyCompactItemize}

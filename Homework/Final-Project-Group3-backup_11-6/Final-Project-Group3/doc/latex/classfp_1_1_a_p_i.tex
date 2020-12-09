@@ -1,0 +1,272 @@
+\hypertarget{classfp_1_1_a_p_i}{}\section{fp\+:\+:A\+PI Class Reference}
+\label{classfp_1_1_a_p_i}\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+
+
+{\ttfamily \#include $<$api.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classfp_1_1_a_p_i_af8adb8d6fe6b921de4172111b32fc710}{maze\+Width} ()
+\item 
+static int \hyperlink{classfp_1_1_a_p_i_a7d9285544497a39f87e841fcfe49deab}{maze\+Height} ()
+\item 
+static bool \hyperlink{classfp_1_1_a_p_i_a52c23ca6b94cd561727e63c4a568bb86}{wall\+Front} ()
+\item 
+static bool \hyperlink{classfp_1_1_a_p_i_aeaebbd3b022bc0ed768dc3112ea1db94}{wall\+Right} ()
+\item 
+static bool \hyperlink{classfp_1_1_a_p_i_a49efec34a5521b6a7f202759f7f758d2}{wall\+Left} ()
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a4863c0dec23d677c5eefb7c03088b29c}{move\+Forward} ()
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_ac346f1c3ae7a39829c16681be2f25e92}{turn\+Right} ()
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_aacf09d263f8c47e7f3eae1f348db0b91}{turn\+Left} ()
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a5f209e53ce63ad478bb67b120b34c7dd}{set\+Wall} (int x, int y, char direction)
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a19710a245ad8c075066046617ea3377b}{clear\+Wall} (int x, int y, char direction)
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a5a7c59cffb4ca483e8c1334a99a04dbb}{set\+Color} (int x, int y, char color)
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a5ab1560f68fb54993c8b3316177040a5}{clear\+Color} (int x, int y)
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a68f86debe50e6e2ae0c1fde795a1cfb6}{clear\+All\+Color} ()
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a4635f5c0c48d2ab53f4436be402c5566}{set\+Text} (int x, int y, const std\+::string \&text)
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a0b23c3b22476d1826987b93b518010d1}{clear\+Text} (int x, int y)
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_ae0b4d27428aad11e98647b88947f2c34}{clear\+All\+Text} ()
+\item 
+static bool \hyperlink{classfp_1_1_a_p_i_a390976eee05262068b7387f1421d906a}{was\+Reset} ()
+\item 
+static void \hyperlink{classfp_1_1_a_p_i_a0c30419c7237b12bc916ce17f93a5be4}{ack\+Reset} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a0c30419c7237b12bc916ce17f93a5be4}\label{classfp_1_1_a_p_i_a0c30419c7237b12bc916ce17f93a5be4}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!ack\+Reset@{ack\+Reset}}
+\index{ack\+Reset@{ack\+Reset}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{ack\+Reset()}{ackReset()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::ack\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that resets the simulation 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a68f86debe50e6e2ae0c1fde795a1cfb6}\label{classfp_1_1_a_p_i_a68f86debe50e6e2ae0c1fde795a1cfb6}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!clear\+All\+Color@{clear\+All\+Color}}
+\index{clear\+All\+Color@{clear\+All\+Color}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{clear\+All\+Color()}{clearAllColor()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::clear\+All\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that clear the color of all cells 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_ae0b4d27428aad11e98647b88947f2c34}\label{classfp_1_1_a_p_i_ae0b4d27428aad11e98647b88947f2c34}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!clear\+All\+Text@{clear\+All\+Text}}
+\index{clear\+All\+Text@{clear\+All\+Text}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{clear\+All\+Text()}{clearAllText()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::clear\+All\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that clears the text of all cells 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a5ab1560f68fb54993c8b3316177040a5}\label{classfp_1_1_a_p_i_a5ab1560f68fb54993c8b3316177040a5}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!clear\+Color@{clear\+Color}}
+\index{clear\+Color@{clear\+Color}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{clear\+Color()}{clearColor()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::clear\+Color (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that clears the color of a cell 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x location of the cell, where x=0 is the left-\/most size of the maze and x increases to the right \\
+\hline
+{\em y} & the y location of the cell, where y=0 is the bottom-\/most size of the maze and y increases upwards \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a0b23c3b22476d1826987b93b518010d1}\label{classfp_1_1_a_p_i_a0b23c3b22476d1826987b93b518010d1}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!clear\+Text@{clear\+Text}}
+\index{clear\+Text@{clear\+Text}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{clear\+Text()}{clearText()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::clear\+Text (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that clears the text of a cell 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x location of the cell, where x=0 is the left-\/most size of the maze and x increases to the right \\
+\hline
+{\em y} & the y location of the cell, where y=0 is the bottom-\/most size of the maze and y increases upwards \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a19710a245ad8c075066046617ea3377b}\label{classfp_1_1_a_p_i_a19710a245ad8c075066046617ea3377b}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!clear\+Wall@{clear\+Wall}}
+\index{clear\+Wall@{clear\+Wall}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{clear\+Wall()}{clearWall()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::clear\+Wall (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that clears a wall from maze 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x location of the cell, where x=0 is the left-\/most size of the maze and x increases to the right \\
+\hline
+{\em y} & the y location of the cell, where y=0 is the bottom-\/most size of the maze and y increases upwards \\
+\hline
+{\em direction} & the direction of the wall which borders the cell (n,s,e, or w) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a7d9285544497a39f87e841fcfe49deab}\label{classfp_1_1_a_p_i_a7d9285544497a39f87e841fcfe49deab}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!maze\+Height@{maze\+Height}}
+\index{maze\+Height@{maze\+Height}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{maze\+Height()}{mazeHeight()}}
+{\footnotesize\ttfamily int fp\+::\+A\+P\+I\+::maze\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that returns the height of the maze. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_af8adb8d6fe6b921de4172111b32fc710}\label{classfp_1_1_a_p_i_af8adb8d6fe6b921de4172111b32fc710}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!maze\+Width@{maze\+Width}}
+\index{maze\+Width@{maze\+Width}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{maze\+Width()}{mazeWidth()}}
+{\footnotesize\ttfamily int fp\+::\+A\+P\+I\+::maze\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that returns the width of the maze. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a4863c0dec23d677c5eefb7c03088b29c}\label{classfp_1_1_a_p_i_a4863c0dec23d677c5eefb7c03088b29c}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!move\+Forward@{move\+Forward}}
+\index{move\+Forward@{move\+Forward}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{move\+Forward()}{moveForward()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::move\+Forward (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that moves the robot forward by one cell 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a5a7c59cffb4ca483e8c1334a99a04dbb}\label{classfp_1_1_a_p_i_a5a7c59cffb4ca483e8c1334a99a04dbb}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!set\+Color@{set\+Color}}
+\index{set\+Color@{set\+Color}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{set\+Color()}{setColor()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::set\+Color (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that sets the color of a cell 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x location of the cell, where x=0 is the left-\/most size of the maze and x increases to the right \\
+\hline
+{\em y} & the y location of the cell, where y=0 is the bottom-\/most size of the maze and y increases upwards \\
+\hline
+{\em color} & the color of the cell \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a4635f5c0c48d2ab53f4436be402c5566}\label{classfp_1_1_a_p_i_a4635f5c0c48d2ab53f4436be402c5566}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!set\+Text@{set\+Text}}
+\index{set\+Text@{set\+Text}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{set\+Text()}{setText()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::set\+Text (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{const std\+::string \&}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that sets the text of a cell 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x location of the cell, where x=0 is the left-\/most size of the maze and x increases to the right \\
+\hline
+{\em y} & the y location of the cell, where y=0 is the bottom-\/most size of the maze and y increases upwards \\
+\hline
+{\em text} & the text to be displayed in the cell \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a5f209e53ce63ad478bb67b120b34c7dd}\label{classfp_1_1_a_p_i_a5f209e53ce63ad478bb67b120b34c7dd}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!set\+Wall@{set\+Wall}}
+\index{set\+Wall@{set\+Wall}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{set\+Wall()}{setWall()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::set\+Wall (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{char}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that displays a wall in maze. 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x location of the wall, where x=0 is the left-\/most size of the maze and x increases to the right \\
+\hline
+{\em y} & the y location of the wall, where y=0 is the bottom-\/most size of the maze and y increases upwards \\
+\hline
+{\em direction} & the direction of the wall which borders the cell (n,s,e, or w) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_aacf09d263f8c47e7f3eae1f348db0b91}\label{classfp_1_1_a_p_i_aacf09d263f8c47e7f3eae1f348db0b91}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!turn\+Left@{turn\+Left}}
+\index{turn\+Left@{turn\+Left}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{turn\+Left()}{turnLeft()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::turn\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that turns the robot 90 degrees to the left 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_ac346f1c3ae7a39829c16681be2f25e92}\label{classfp_1_1_a_p_i_ac346f1c3ae7a39829c16681be2f25e92}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!turn\+Right@{turn\+Right}}
+\index{turn\+Right@{turn\+Right}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{turn\+Right()}{turnRight()}}
+{\footnotesize\ttfamily void fp\+::\+A\+P\+I\+::turn\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that turns the robot 90 degrees to the right 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a52c23ca6b94cd561727e63c4a568bb86}\label{classfp_1_1_a_p_i_a52c23ca6b94cd561727e63c4a568bb86}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!wall\+Front@{wall\+Front}}
+\index{wall\+Front@{wall\+Front}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{wall\+Front()}{wallFront()}}
+{\footnotesize\ttfamily bool fp\+::\+A\+P\+I\+::wall\+Front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that returns true if there is a wall in front of the robot, else false. 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a49efec34a5521b6a7f202759f7f758d2}\label{classfp_1_1_a_p_i_a49efec34a5521b6a7f202759f7f758d2}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!wall\+Left@{wall\+Left}}
+\index{wall\+Left@{wall\+Left}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{wall\+Left()}{wallLeft()}}
+{\footnotesize\ttfamily bool fp\+::\+A\+P\+I\+::wall\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that returns true if there is a wall to the left of the robot, else false 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_aeaebbd3b022bc0ed768dc3112ea1db94}\label{classfp_1_1_a_p_i_aeaebbd3b022bc0ed768dc3112ea1db94}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!wall\+Right@{wall\+Right}}
+\index{wall\+Right@{wall\+Right}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{wall\+Right()}{wallRight()}}
+{\footnotesize\ttfamily bool fp\+::\+A\+P\+I\+::wall\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that returns true if there is a wall to the right of the robot, else false 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classfp_1_1_a_p_i_a390976eee05262068b7387f1421d906a}\label{classfp_1_1_a_p_i_a390976eee05262068b7387f1421d906a}} 
+\index{fp\+::\+A\+PI@{fp\+::\+A\+PI}!was\+Reset@{was\+Reset}}
+\index{was\+Reset@{was\+Reset}!fp\+::\+A\+PI@{fp\+::\+A\+PI}}
+\subsubsection{\texorpdfstring{was\+Reset()}{wasReset()}}
+{\footnotesize\ttfamily bool fp\+::\+A\+P\+I\+::was\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+A function that returns true if the reset button was pressed, else false 
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+A\+P\+I/\hyperlink{api_8h}{api.\+h}\item 
+/home/diane/\+One\+Drive/\+Fall 2020/\+E\+N\+P\+M809\+Y Intro Robot Programming/\+Homework/\+Final-\/\+Project-\/\+Group3/src/\+A\+P\+I/\hyperlink{api_8cpp}{api.\+cpp}\end{DoxyCompactItemize}
