@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['unsolvable',['Unsolvable',['../classfp_1_1_maze.html#abdf504125bc0cd3ea18ba17b0887a5a2',1,'fp::Maze']]]
+  ['visited_5fnode_5f',['visited_node_',['../classfp_1_1_algorithm.html#a41904cf962dd8c46901d39ab03d77545',1,'fp::Algorithm']]]
 ];

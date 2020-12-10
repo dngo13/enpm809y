@@ -97,7 +97,13 @@ namespace fp {
          */
         std::shared_ptr<fp::LandBasedRobot> robot_;
 
-
+        bool CheckDeadEnd(std::array<int, 2> curr_node, char current_direction);
+        /**
+         *
+         * @param curr_node
+         * @param visited_node_
+         */
+        void BackTrack(std::array<int, 2> curr_node, char& current_direction, std::array<std::array <bool, 16>, 16>& visited_node_);
         /**
          * CheckPath function sees if the next node has been visited or a wall
          * @param path_blocked_ boolean to see if path is blocked by a wall

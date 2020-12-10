@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['maze',['maze',['../classfp_1_1_algorithm.html#a5eaa9074986ebf65f2f549f78eedd0f2',1,'fp::Algorithm']]],
-  ['maze_5farr',['maze_arr',['../classfp_1_1_maze.html#a8610720d37ec84d7b2192b13334ea525',1,'fp::Maze']]],
-  ['maze_5fheight',['MAZE_HEIGHT',['../classfp_1_1_maze.html#a3cee2050b4d60bceacc9307e7016b931',1,'fp::Maze']]],
-  ['maze_5fwidth',['MAZE_WIDTH',['../classfp_1_1_maze.html#ae976c87b67bf82c41ede75a19ac28c2c',1,'fp::Maze']]]
+  ['name_5f',['name_',['../classfp_1_1_land_based_wheeled.html#a72094d60b6dbfa33b6e5cab4a8e5f7c4',1,'fp::LandBasedWheeled::name_()'],['../classfp_1_1_land_based_tracked.html#abf54193cc934e3e3833a2ed3767eee9a',1,'fp::LandBasedTracked::name_()'],['../classfp_1_1_land_based_robot.html#a548e8bdaead3c8ddbcaa9eac1121d1c5',1,'fp::LandBasedRobot::name_()']]],
+  ['next_5fnode',['next_node',['../classfp_1_1_algorithm.html#ac3672498d86469ee445fe66a140952cb',1,'fp::Algorithm']]]
 ];

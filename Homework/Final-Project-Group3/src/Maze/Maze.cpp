@@ -42,8 +42,4 @@ void fp::Maze::SetPerimeterWalls() {
     }
 }
 
-void fp::Maze::SetPathColor(std::array<int, 2> start_node) {
-    fp::API::setColor(start_node[0], start_node[1],  'c');
-}
-
 

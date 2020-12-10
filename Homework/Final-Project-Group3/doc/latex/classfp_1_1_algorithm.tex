@@ -23,11 +23,11 @@ struct \hyperlink{structfp_1_1_algorithm_1_1_position}{Position}
 \item 
 void \hyperlink{classfp_1_1_algorithm_ab91291b423ce58ba86e317112ca0c5ba}{Update\+Direction} (char \&current\+\_\+direction, char turn)
 \item 
-void \hyperlink{classfp_1_1_algorithm_a31c6fa52ea1a75e1a9b3179cb018b6ef}{Update\+Position} (char current\+\_\+direction, char move, \hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&curr\+\_\+pos)
+void \hyperlink{classfp_1_1_algorithm_a14f37fd87d690a5db6a38ea63cd1aeb1}{Update\+Position} (char current\+\_\+direction, char move, std\+::array$<$ int, 2 $>$ \&\hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node})
 \item 
 void \hyperlink{classfp_1_1_algorithm_ac6e4cae1f140d0155f2feaaaf1d287c1}{Solve} ()
 \item 
-void \hyperlink{classfp_1_1_algorithm_a5883d1cbb2d20803903de4bb0873f359}{D\+FS} (bool start, char \&current\+\_\+direction, const std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot} $>$ \&robot)
+void \hyperlink{classfp_1_1_algorithm_a5c0c5a23c677797bbe4b9616f1bfded6}{D\+FS} (bool start, char current\+\_\+direction, const std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot} $>$ \&robot)
 \item 
 bool \hyperlink{classfp_1_1_algorithm_a169e9e4e400a85687aa6554a3cbd2e04}{Reset\+Pressed} ()
 \item 
@@ -35,9 +35,13 @@ void \hyperlink{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}{reset} 
 \item 
 void \hyperlink{classfp_1_1_algorithm_a434cfecd6898f4e89ba632433fa19afd}{Call\+Set\+Maze} ()
 \item 
-void \hyperlink{classfp_1_1_algorithm_aecb33f136eb5c2cb6130f9b26a4320b0}{Check\+Wall} (\hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&\hyperlink{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}{position}, char \&current\+\_\+direction)
+void \hyperlink{classfp_1_1_algorithm_ac82185822a00aa4b08266207ca4b7e26}{Check\+Wall} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}, char \&current\+\_\+direction, std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \hyperlink{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}{visited\+\_\+node\+\_\+})
 \item 
-void \hyperlink{classfp_1_1_algorithm_ab12d9f15d25fe35e3e7733570c626413}{Find\+Next\+Node} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}, char current\+\_\+direction, bool \hyperlink{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}{path\+\_\+blocked\+\_\+})
+void \hyperlink{classfp_1_1_algorithm_a363e9198e1a2f95caa581b5b9e90efb6}{Find\+Next\+Node} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}, char \&current\+\_\+direction, bool \hyperlink{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}{path\+\_\+blocked\+\_\+})
+\item 
+bool \hyperlink{classfp_1_1_algorithm_a2309270f8f6276d6f421328239269d3a}{Check\+Dead\+End} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}, char current\+\_\+direction)
+\item 
+void \hyperlink{classfp_1_1_algorithm_ab272faa6f88e5edbe2f8c19b2988ae16}{Back\+Track} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}, char \&current\+\_\+direction, std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \&\hyperlink{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}{visited\+\_\+node\+\_\+})
 \item 
 bool \hyperlink{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}{Check\+Path} (std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_ac3672498d86469ee445fe66a140952cb}{next\+\_\+node}, std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \hyperlink{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}{visited\+\_\+node\+\_\+})
 \item 
@@ -67,10 +71,6 @@ std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classfp_1_1_algorithm_ac289d75b6850d5ad4a888360b3cfeda9}{Clear\+Stack} ()
-\item 
-void \hyperlink{classfp_1_1_algorithm_aaa34202f81b3b971590cc7608f0665df}{Move\+Left} ()
-\item 
-void \hyperlink{classfp_1_1_algorithm_a038bec51ce281896e229908b0822b749}{Move\+Right} ()
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -79,9 +79,9 @@ void \hyperlink{classfp_1_1_algorithm_a038bec51ce281896e229908b0822b749}{Move\+R
 \item 
 char \hyperlink{classfp_1_1_algorithm_afdbf632b658aea1aef75caa90e60a8fc}{direction} \{\textquotesingle{}n\textquotesingle{}\}
 \item 
-std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \hyperlink{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}{visited\+\_\+node\+\_\+}
+std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \hyperlink{classfp_1_1_algorithm_a41904cf962dd8c46901d39ab03d77545}{visited\+\_\+node\+\_\+} \{false\}
 \item 
-std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node}
+std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a88395e8c0b52c4aef33b41caff21300c}{curr\+\_\+node} = \{0, 0\}
 \item 
 std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_ac3672498d86469ee445fe66a140952cb}{next\+\_\+node}
 \item 
@@ -94,8 +94,6 @@ std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_aa01beb678f2db28d33e
 std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a8e8b41783484c3a30ae85bcd978d5e46}{goal\+\_\+3}
 \item 
 std\+::array$<$ int, 2 $>$ \hyperlink{classfp_1_1_algorithm_a9832306da6877eba455ef5160c4a7f86}{goal\+\_\+4}
-\item 
-bool \hyperlink{classfp_1_1_algorithm_a2a305831ed2802bbb7e9149eda9dd637}{path\+\_\+found} \{\}
 \item 
 bool \hyperlink{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}{path\+\_\+blocked\+\_\+} \{true\}
 \end{DoxyCompactItemize}
@@ -117,13 +115,32 @@ bool \hyperlink{classfp_1_1_algorithm_a7a37ba8431c685c42f305a73812efecb}{path\+\
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classfp_1_1_algorithm_ab272faa6f88e5edbe2f8c19b2988ae16}\label{classfp_1_1_algorithm_ab272faa6f88e5edbe2f8c19b2988ae16}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Back\+Track@{Back\+Track}}
+\index{Back\+Track@{Back\+Track}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Back\+Track()}{BackTrack()}}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Back\+Track (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{curr\+\_\+node,  }\item[{char \&}]{current\+\_\+direction,  }\item[{std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$ \&}]{visited\+\_\+node\+\_\+ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em curr\+\_\+node} & \\
+\hline
+{\em visited\+\_\+node\+\_\+} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classfp_1_1_algorithm_a434cfecd6898f4e89ba632433fa19afd}\label{classfp_1_1_algorithm_a434cfecd6898f4e89ba632433fa19afd}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Call\+Set\+Maze@{Call\+Set\+Maze}}
 \index{Call\+Set\+Maze@{Call\+Set\+Maze}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{Call\+Set\+Maze()}{CallSetMaze()}}
 {\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Call\+Set\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Function to set the center and perimeter of the maze \mbox{\Hypertarget{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}\label{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}} 
+Function to set the center and perimeter of the maze \mbox{\Hypertarget{classfp_1_1_algorithm_a2309270f8f6276d6f421328239269d3a}\label{classfp_1_1_algorithm_a2309270f8f6276d6f421328239269d3a}} 
+\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Check\+Dead\+End@{Check\+Dead\+End}}
+\index{Check\+Dead\+End@{Check\+Dead\+End}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
+\subsubsection{\texorpdfstring{Check\+Dead\+End()}{CheckDeadEnd()}}
+{\footnotesize\ttfamily bool fp\+::\+Algorithm\+::\+Check\+Dead\+End (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{curr\+\_\+node,  }\item[{char}]{current\+\_\+direction }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}\label{classfp_1_1_algorithm_a9270347a0ca5be0f7717e6772de5f87c}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Check\+Path@{Check\+Path}}
 \index{Check\+Path@{Check\+Path}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{Check\+Path()}{CheckPath()}}
@@ -141,11 +158,11 @@ Check\+Path function sees if the next node has been visited or a wall
 \begin{DoxyReturn}{Returns}
 true or false if path can be moved to 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classfp_1_1_algorithm_aecb33f136eb5c2cb6130f9b26a4320b0}\label{classfp_1_1_algorithm_aecb33f136eb5c2cb6130f9b26a4320b0}} 
+\mbox{\Hypertarget{classfp_1_1_algorithm_ac82185822a00aa4b08266207ca4b7e26}\label{classfp_1_1_algorithm_ac82185822a00aa4b08266207ca4b7e26}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Check\+Wall@{Check\+Wall}}
 \index{Check\+Wall@{Check\+Wall}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{Check\+Wall()}{CheckWall()}}
-{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Check\+Wall (\begin{DoxyParamCaption}\item[{\hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&}]{position,  }\item[{char \&}]{current\+\_\+direction }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Check\+Wall (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{curr\+\_\+node,  }\item[{char \&}]{current\+\_\+direction,  }\item[{std\+::array$<$ std\+::array$<$ bool, 16 $>$, 16 $>$}]{visited\+\_\+node\+\_\+ }\end{DoxyParamCaption})}
 
 Check\+Wall is a method to check if there is a wall in the front, left, and right side of the robot 
 \begin{DoxyParams}{Parameters}
@@ -163,26 +180,26 @@ Check\+Wall is a method to check if there is a wall in the front, left, and righ
 \subsubsection{\texorpdfstring{Clear\+Stack()}{ClearStack()}}
 {\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Clear\+Stack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classfp_1_1_algorithm_a5883d1cbb2d20803903de4bb0873f359}\label{classfp_1_1_algorithm_a5883d1cbb2d20803903de4bb0873f359}} 
+\mbox{\Hypertarget{classfp_1_1_algorithm_a5c0c5a23c677797bbe4b9616f1bfded6}\label{classfp_1_1_algorithm_a5c0c5a23c677797bbe4b9616f1bfded6}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!D\+FS@{D\+FS}}
 \index{D\+FS@{D\+FS}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{D\+F\+S()}{DFS()}}
-{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+D\+FS (\begin{DoxyParamCaption}\item[{bool}]{start,  }\item[{char \&}]{current\+\_\+direction,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot} $>$ \&}]{robot }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+D\+FS (\begin{DoxyParamCaption}\item[{bool}]{start,  }\item[{char}]{current\+\_\+direction,  }\item[{const std\+::shared\+\_\+ptr$<$ \hyperlink{classfp_1_1_land_based_robot}{fp\+::\+Land\+Based\+Robot} $>$ \&}]{robot }\end{DoxyParamCaption})}
 
-Depth First Search \hyperlink{classfp_1_1_algorithm}{Algorithm} to traverse through the maze and save visited nodes 
+Depth First Search \hyperlink{classfp_1_1_algorithm}{Algorithm} to traverse through the maze and save visited nodes, starts with checking south then east, north, and west, in counterclockwise order 
 \begin{DoxyParams}{Parameters}
 {\em start} & tells the algorithm if first time starting it \\
 \hline
 {\em current\+\_\+direction} & current direction of the robot \\
 \hline
-{\em robot} & \\
+{\em robot} & pointer to one of the available robots, wheeled/tracked \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classfp_1_1_algorithm_ab12d9f15d25fe35e3e7733570c626413}\label{classfp_1_1_algorithm_ab12d9f15d25fe35e3e7733570c626413}} 
+\mbox{\Hypertarget{classfp_1_1_algorithm_a363e9198e1a2f95caa581b5b9e90efb6}\label{classfp_1_1_algorithm_a363e9198e1a2f95caa581b5b9e90efb6}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Find\+Next\+Node@{Find\+Next\+Node}}
 \index{Find\+Next\+Node@{Find\+Next\+Node}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{Find\+Next\+Node()}{FindNextNode()}}
-{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Find\+Next\+Node (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{curr\+\_\+node,  }\item[{char}]{current\+\_\+direction,  }\item[{bool}]{path\+\_\+blocked\+\_\+ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Find\+Next\+Node (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{curr\+\_\+node,  }\item[{char \&}]{current\+\_\+direction,  }\item[{bool}]{path\+\_\+blocked\+\_\+ }\end{DoxyParamCaption})}
 
 Find\+Next\+Node function checks 1 node forward in every direction and sees if the path is blocked or is visited to determine which direction the robot can go to 
 \begin{DoxyParams}{Parameters}
@@ -201,9 +218,9 @@ Arrays to define the possible direction of the nodes , north, south, east, west\
 
 Initializes the maze with default settings 
 \begin{DoxyParams}{Parameters}
-{\em position} & \\
+{\em position} & structure for x y coordinates, sets to 0 for initialization \\
 \hline
-{\em direction} & \\
+{\em direction} & character to assign the robot direction n, s, e, w \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}\label{classfp_1_1_algorithm_ad8d891300bf2a5be160a629a93e7058d}} 
@@ -214,22 +231,10 @@ Initializes the maze with default settings
 
 A method to print out text to the maze simulator 
 \begin{DoxyParams}{Parameters}
-{\em text} & \hyperlink{_algorithm_8cpp}{Algorithm.\+cpp} \\
+{\em text} & Message\\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classfp_1_1_algorithm_aaa34202f81b3b971590cc7608f0665df}\label{classfp_1_1_algorithm_aaa34202f81b3b971590cc7608f0665df}} 
-\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Move\+Left@{Move\+Left}}
-\index{Move\+Left@{Move\+Left}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
-\subsubsection{\texorpdfstring{Move\+Left()}{MoveLeft()}}
-{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{classfp_1_1_algorithm_a038bec51ce281896e229908b0822b749}\label{classfp_1_1_algorithm_a038bec51ce281896e229908b0822b749}} 
-\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Move\+Right@{Move\+Right}}
-\index{Move\+Right@{Move\+Right}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
-\subsubsection{\texorpdfstring{Move\+Right()}{MoveRight()}}
-{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}\label{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}} 
+\hyperlink{_algorithm_8cpp}{Algorithm.\+cpp} \mbox{\Hypertarget{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}\label{classfp_1_1_algorithm_a182de09af3489ef37ea0fd4a4baeacbc}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!reset@{reset}}
 \index{reset@{reset}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
@@ -263,19 +268,19 @@ Function to update the direction of the robot
 {\em turn} & char to specify if the robot is turning left or right \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classfp_1_1_algorithm_a31c6fa52ea1a75e1a9b3179cb018b6ef}\label{classfp_1_1_algorithm_a31c6fa52ea1a75e1a9b3179cb018b6ef}} 
+\mbox{\Hypertarget{classfp_1_1_algorithm_a14f37fd87d690a5db6a38ea63cd1aeb1}\label{classfp_1_1_algorithm_a14f37fd87d690a5db6a38ea63cd1aeb1}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!Update\+Position@{Update\+Position}}
 \index{Update\+Position@{Update\+Position}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{Update\+Position()}{UpdatePosition()}}
-{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{char}]{current\+\_\+direction,  }\item[{char}]{move,  }\item[{\hyperlink{structfp_1_1_algorithm_1_1_position}{Position} \&}]{curr\+\_\+pos }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void fp\+::\+Algorithm\+::\+Update\+Position (\begin{DoxyParamCaption}\item[{char}]{current\+\_\+direction,  }\item[{char}]{move,  }\item[{std\+::array$<$ int, 2 $>$ \&}]{curr\+\_\+node }\end{DoxyParamCaption})}
 
 Function to update the position of the robot 
 \begin{DoxyParams}{Parameters}
 {\em current\+\_\+direction} & char direction of N/\+S/\+E/W \\
 \hline
-{\em move} & \\
+{\em move} & character to define if the robot moved forward \\
 \hline
-{\em curr\+\_\+pos} & \\
+{\em curr\+\_\+pos} & array to specify current node/cell of robot \\
 \hline
 \end{DoxyParams}
 
@@ -285,7 +290,7 @@ Function to update the position of the robot
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!curr\+\_\+node@{curr\+\_\+node}}
 \index{curr\+\_\+node@{curr\+\_\+node}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{curr\+\_\+node}{curr\_node}}
-{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::curr\+\_\+node\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::array$<$int, 2$>$ fp\+::\+Algorithm\+::curr\+\_\+node = \{0, 0\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classfp_1_1_algorithm_a94d3b3797f19988f49fbda76013c3899}\label{classfp_1_1_algorithm_a94d3b3797f19988f49fbda76013c3899}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!current\+\_\+pos@{current\+\_\+pos}}
@@ -347,12 +352,6 @@ Function to update the position of the robot
 \subsubsection{\texorpdfstring{path\+\_\+blocked\+\_\+}{path\_blocked\_}}
 {\footnotesize\ttfamily bool fp\+::\+Algorithm\+::path\+\_\+blocked\+\_\+ \{true\}\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classfp_1_1_algorithm_a2a305831ed2802bbb7e9149eda9dd637}\label{classfp_1_1_algorithm_a2a305831ed2802bbb7e9149eda9dd637}} 
-\index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!path\+\_\+found@{path\+\_\+found}}
-\index{path\+\_\+found@{path\+\_\+found}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
-\subsubsection{\texorpdfstring{path\+\_\+found}{path\_found}}
-{\footnotesize\ttfamily bool fp\+::\+Algorithm\+::path\+\_\+found \{\}\hspace{0.3cm}{\ttfamily [protected]}}
-
 \mbox{\Hypertarget{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}\label{classfp_1_1_algorithm_a841339b57c3d2739325f3f421ada43b6}} 
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!position@{position}}
 \index{position@{position}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
@@ -375,7 +374,7 @@ Stack where nodes will be pushed \mbox{\Hypertarget{classfp_1_1_algorithm_a41904
 \index{fp\+::\+Algorithm@{fp\+::\+Algorithm}!visited\+\_\+node\+\_\+@{visited\+\_\+node\+\_\+}}
 \index{visited\+\_\+node\+\_\+@{visited\+\_\+node\+\_\+}!fp\+::\+Algorithm@{fp\+::\+Algorithm}}
 \subsubsection{\texorpdfstring{visited\+\_\+node\+\_\+}{visited\_node\_}}
-{\footnotesize\ttfamily std\+::array$<$std\+::array $<$bool, 16$>$, 16$>$ fp\+::\+Algorithm\+::visited\+\_\+node\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::array$<$std\+::array $<$bool, 16$>$, 16$>$ fp\+::\+Algorithm\+::visited\+\_\+node\+\_\+ \{false\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 Defining the nodes of arrays 
 

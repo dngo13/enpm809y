@@ -7,11 +7,7 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classfp_1_1_maze_af090b97595ed34cad9f7c8de9e79a127}{Maze} ()
-\item 
 void \hyperlink{classfp_1_1_maze_af1ffa713840a40bdcedb99e79ea5bde3}{Set\+Center} ()
-\item 
-void \hyperlink{classfp_1_1_maze_ace62554f667bd404e059bb61166e44f0}{Set\+Path\+Color} (std\+::array$<$ int, 2 $>$ start\+\_\+node)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -20,16 +16,6 @@ static void \hyperlink{classfp_1_1_maze_a689d998d05f671c2644804ee912c5e79}{Set\+
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
-\item 
-int \hyperlink{classfp_1_1_maze_a8610720d37ec84d7b2192b13334ea525}{maze\+\_\+arr} \mbox{[}\hyperlink{classfp_1_1_maze_ae976c87b67bf82c41ede75a19ac28c2c}{M\+A\+Z\+E\+\_\+\+W\+I\+D\+TH}\mbox{]}\mbox{[}\hyperlink{classfp_1_1_maze_a3cee2050b4d60bceacc9307e7016b931}{M\+A\+Z\+E\+\_\+\+H\+E\+I\+G\+HT}\mbox{]}
-\item 
-std\+::array$<$ std\+::array$<$ bool, 16 $>$, 2 $>$ \hyperlink{classfp_1_1_maze_a7a16c86454b8898a4ba6a913cbfcb67e}{north\+\_\+}
-\item 
-std\+::array$<$ std\+::array$<$ bool, 16 $>$, 2 $>$ \hyperlink{classfp_1_1_maze_ab494935167a2bf7f358b72e6c032eef8}{south\+\_\+}
-\item 
-std\+::array$<$ std\+::array$<$ bool, 16 $>$, 2 $>$ \hyperlink{classfp_1_1_maze_ac1d6b5fc763eff421af708aa39f2141a}{east\+\_\+}
-\item 
-std\+::array$<$ std\+::array$<$ bool, 16 $>$, 2 $>$ \hyperlink{classfp_1_1_maze_afc8b97457d6f4ff69ed812741982c298}{west\+\_\+}
 \item 
 bool \hyperlink{classfp_1_1_maze_abdf504125bc0cd3ea18ba17b0887a5a2}{Unsolvable}
 \end{DoxyCompactItemize}
@@ -42,15 +28,6 @@ static const int \hyperlink{classfp_1_1_maze_a3cee2050b4d60bceacc9307e7016b931}{
 \end{DoxyCompactItemize}
 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classfp_1_1_maze_af090b97595ed34cad9f7c8de9e79a127}\label{classfp_1_1_maze_af090b97595ed34cad9f7c8de9e79a127}} 
-\index{fp\+::\+Maze@{fp\+::\+Maze}!Maze@{Maze}}
-\index{Maze@{Maze}!fp\+::\+Maze@{fp\+::\+Maze}}
-\subsubsection{\texorpdfstring{Maze()}{Maze()}}
-{\footnotesize\ttfamily fp\+::\+Maze\+::\+Maze (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
-
-Constructor for maze 
-
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classfp_1_1_maze_af1ffa713840a40bdcedb99e79ea5bde3}\label{classfp_1_1_maze_af1ffa713840a40bdcedb99e79ea5bde3}} 
 \index{fp\+::\+Maze@{fp\+::\+Maze}!Set\+Center@{Set\+Center}}
@@ -58,18 +35,7 @@ Constructor for maze
 \subsubsection{\texorpdfstring{Set\+Center()}{SetCenter()}}
 {\footnotesize\ttfamily void fp\+::\+Maze\+::\+Set\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Initialize center of the maze by setting the color and text of the 4 center tiles \mbox{\Hypertarget{classfp_1_1_maze_ace62554f667bd404e059bb61166e44f0}\label{classfp_1_1_maze_ace62554f667bd404e059bb61166e44f0}} 
-\index{fp\+::\+Maze@{fp\+::\+Maze}!Set\+Path\+Color@{Set\+Path\+Color}}
-\index{Set\+Path\+Color@{Set\+Path\+Color}!fp\+::\+Maze@{fp\+::\+Maze}}
-\subsubsection{\texorpdfstring{Set\+Path\+Color()}{SetPathColor()}}
-{\footnotesize\ttfamily void fp\+::\+Maze\+::\+Set\+Path\+Color (\begin{DoxyParamCaption}\item[{std\+::array$<$ int, 2 $>$}]{start\+\_\+node }\end{DoxyParamCaption})}
-
-Sets the path color as the robot travels 
-\begin{DoxyParams}{Parameters}
-{\em start\+\_\+node} & starting position of the robot \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classfp_1_1_maze_a689d998d05f671c2644804ee912c5e79}\label{classfp_1_1_maze_a689d998d05f671c2644804ee912c5e79}} 
+Initialize center of the maze by setting the color and text of the 4 center tiles \mbox{\Hypertarget{classfp_1_1_maze_a689d998d05f671c2644804ee912c5e79}\label{classfp_1_1_maze_a689d998d05f671c2644804ee912c5e79}} 
 \index{fp\+::\+Maze@{fp\+::\+Maze}!Set\+Perimeter\+Walls@{Set\+Perimeter\+Walls}}
 \index{Set\+Perimeter\+Walls@{Set\+Perimeter\+Walls}!fp\+::\+Maze@{fp\+::\+Maze}}
 \subsubsection{\texorpdfstring{Set\+Perimeter\+Walls()}{SetPerimeterWalls()}}
@@ -78,19 +44,7 @@ Sets the path color as the robot travels
 Set the perimeter walls 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classfp_1_1_maze_ac1d6b5fc763eff421af708aa39f2141a}\label{classfp_1_1_maze_ac1d6b5fc763eff421af708aa39f2141a}} 
-\index{fp\+::\+Maze@{fp\+::\+Maze}!east\+\_\+@{east\+\_\+}}
-\index{east\+\_\+@{east\+\_\+}!fp\+::\+Maze@{fp\+::\+Maze}}
-\subsubsection{\texorpdfstring{east\+\_\+}{east\_}}
-{\footnotesize\ttfamily std\+::array$<$std\+::array$<$bool, 16$>$, 2$>$ fp\+::\+Maze\+::east\+\_\+}
-
-\mbox{\Hypertarget{classfp_1_1_maze_a8610720d37ec84d7b2192b13334ea525}\label{classfp_1_1_maze_a8610720d37ec84d7b2192b13334ea525}} 
-\index{fp\+::\+Maze@{fp\+::\+Maze}!maze\+\_\+arr@{maze\+\_\+arr}}
-\index{maze\+\_\+arr@{maze\+\_\+arr}!fp\+::\+Maze@{fp\+::\+Maze}}
-\subsubsection{\texorpdfstring{maze\+\_\+arr}{maze\_arr}}
-{\footnotesize\ttfamily int fp\+::\+Maze\+::maze\+\_\+arr\mbox{[}\hyperlink{classfp_1_1_maze_ae976c87b67bf82c41ede75a19ac28c2c}{M\+A\+Z\+E\+\_\+\+W\+I\+D\+TH}\mbox{]}\mbox{[}\hyperlink{classfp_1_1_maze_a3cee2050b4d60bceacc9307e7016b931}{M\+A\+Z\+E\+\_\+\+H\+E\+I\+G\+HT}\mbox{]}}
-
-Define the maze as 16x16 2D array \mbox{\Hypertarget{classfp_1_1_maze_a3cee2050b4d60bceacc9307e7016b931}\label{classfp_1_1_maze_a3cee2050b4d60bceacc9307e7016b931}} 
+\mbox{\Hypertarget{classfp_1_1_maze_a3cee2050b4d60bceacc9307e7016b931}\label{classfp_1_1_maze_a3cee2050b4d60bceacc9307e7016b931}} 
 \index{fp\+::\+Maze@{fp\+::\+Maze}!M\+A\+Z\+E\+\_\+\+H\+E\+I\+G\+HT@{M\+A\+Z\+E\+\_\+\+H\+E\+I\+G\+HT}}
 \index{M\+A\+Z\+E\+\_\+\+H\+E\+I\+G\+HT@{M\+A\+Z\+E\+\_\+\+H\+E\+I\+G\+HT}!fp\+::\+Maze@{fp\+::\+Maze}}
 \subsubsection{\texorpdfstring{M\+A\+Z\+E\+\_\+\+H\+E\+I\+G\+HT}{MAZE\_HEIGHT}}
@@ -102,29 +56,11 @@ Define the maze height \mbox{\Hypertarget{classfp_1_1_maze_ae976c87b67bf82c41ede
 \subsubsection{\texorpdfstring{M\+A\+Z\+E\+\_\+\+W\+I\+D\+TH}{MAZE\_WIDTH}}
 {\footnotesize\ttfamily const int fp\+::\+Maze\+::\+M\+A\+Z\+E\+\_\+\+W\+I\+D\+TH = 16\hspace{0.3cm}{\ttfamily [static]}}
 
-Define the maze width \mbox{\Hypertarget{classfp_1_1_maze_a7a16c86454b8898a4ba6a913cbfcb67e}\label{classfp_1_1_maze_a7a16c86454b8898a4ba6a913cbfcb67e}} 
-\index{fp\+::\+Maze@{fp\+::\+Maze}!north\+\_\+@{north\+\_\+}}
-\index{north\+\_\+@{north\+\_\+}!fp\+::\+Maze@{fp\+::\+Maze}}
-\subsubsection{\texorpdfstring{north\+\_\+}{north\_}}
-{\footnotesize\ttfamily std\+::array$<$std\+::array$<$bool, 16$>$, 2$>$ fp\+::\+Maze\+::north\+\_\+}
-
-\mbox{\Hypertarget{classfp_1_1_maze_ab494935167a2bf7f358b72e6c032eef8}\label{classfp_1_1_maze_ab494935167a2bf7f358b72e6c032eef8}} 
-\index{fp\+::\+Maze@{fp\+::\+Maze}!south\+\_\+@{south\+\_\+}}
-\index{south\+\_\+@{south\+\_\+}!fp\+::\+Maze@{fp\+::\+Maze}}
-\subsubsection{\texorpdfstring{south\+\_\+}{south\_}}
-{\footnotesize\ttfamily std\+::array$<$std\+::array$<$bool, 16$>$, 2$>$ fp\+::\+Maze\+::south\+\_\+}
-
-\mbox{\Hypertarget{classfp_1_1_maze_abdf504125bc0cd3ea18ba17b0887a5a2}\label{classfp_1_1_maze_abdf504125bc0cd3ea18ba17b0887a5a2}} 
+Define the maze width \mbox{\Hypertarget{classfp_1_1_maze_abdf504125bc0cd3ea18ba17b0887a5a2}\label{classfp_1_1_maze_abdf504125bc0cd3ea18ba17b0887a5a2}} 
 \index{fp\+::\+Maze@{fp\+::\+Maze}!Unsolvable@{Unsolvable}}
 \index{Unsolvable@{Unsolvable}!fp\+::\+Maze@{fp\+::\+Maze}}
 \subsubsection{\texorpdfstring{Unsolvable}{Unsolvable}}
 {\footnotesize\ttfamily bool fp\+::\+Maze\+::\+Unsolvable}
-
-\mbox{\Hypertarget{classfp_1_1_maze_afc8b97457d6f4ff69ed812741982c298}\label{classfp_1_1_maze_afc8b97457d6f4ff69ed812741982c298}} 
-\index{fp\+::\+Maze@{fp\+::\+Maze}!west\+\_\+@{west\+\_\+}}
-\index{west\+\_\+@{west\+\_\+}!fp\+::\+Maze@{fp\+::\+Maze}}
-\subsubsection{\texorpdfstring{west\+\_\+}{west\_}}
-{\footnotesize\ttfamily std\+::array$<$std\+::array$<$bool, 16$>$, 2$>$ fp\+::\+Maze\+::west\+\_\+}
 
 
 
