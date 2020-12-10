@@ -1,0 +1,4 @@
+/home/diane/Documents/clion-2020.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Lecture02/Lecture 2 Exercises"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Lecture02/Lecture 2 Exercises/cmake-build-debug

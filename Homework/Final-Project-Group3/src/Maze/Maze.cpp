@@ -11,17 +11,15 @@
 
 void fp::Maze::SetCenter() {
     fp::API::setColor(0, 0,  'G');
-    fp::API::setText(0, 0, "S");
-
-    fp::API::setText(7, 7, "G");
-    fp::API::setText(7, 8, "G");
-    fp::API::setText(8, 7, "G");
-    fp::API::setText(8, 8, "G");
-
     fp::API::setColor(7, 7,  'B');
     fp::API::setColor(7, 8,  'B');
     fp::API::setColor(8, 7,  'B');
     fp::API::setColor(8, 8,  'B');
+    fp::API::setText(0, 0, "S");
+    fp::API::setText(7, 7, "G");
+    fp::API::setText(7, 8, "G");
+    fp::API::setText(8, 7, "G");
+    fp::API::setText(8, 8, "G");
 
 }
 
@@ -42,10 +40,6 @@ void fp::Maze::SetPerimeterWalls() {
             }
         }
     }
-}
-
-void fp::Maze::SetPathColor(std::array<int, 2> start_node) {
-    fp::API::setColor(start_node[0], start_node[1],  'c');
 }
 
 

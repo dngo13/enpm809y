@@ -1,0 +1,1 @@
+/usr/bin/c++  -g  -rdynamic CMakeFiles/final-.dir/main.cpp.o CMakeFiles/final-.dir/src/LandBasedRobot/LandBasedRobot.cpp.o CMakeFiles/final-.dir/src/LandBasedWheeled/landbasedwheeled.cpp.o CMakeFiles/final-.dir/src/LandBasedTracked/landbasedtracked.cpp.o  -o final- 

@@ -11,6 +11,8 @@
 //g++ ../main.cpp API/api.cpp LandBasedRobot/LandBasedRobot.cpp LandBasedTracked/landbasedtracked.cpp LandBasedWheeled/landbasedwheeled.cpp Algorithm/Algorithm.cpp
 
 int main(){
+
+
     std::shared_ptr<fp::LandBasedRobot> wheeled = std::make_shared<fp::LandBasedWheeled>("Husky", 0, 0, 'N');
     fp::Algorithm algorithm;
     algorithm.Solve();

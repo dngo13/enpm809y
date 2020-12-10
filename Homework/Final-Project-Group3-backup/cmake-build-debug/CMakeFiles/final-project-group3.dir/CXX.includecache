@@ -1,0 +1,66 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/API/api.h
+string
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/main.cpp
+src/LandBasedWheeled/landbasedwheeled.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedWheeled/landbasedwheeled.h
+src/LandBasedTracked/landbasedtracked.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedTracked/landbasedtracked.h
+iostream
+-
+string
+-
+API/api.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/API/api.h
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.cpp
+LandBasedRobot.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.h
+iostream
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.h
+string
+-
+iostream
+-
+utility
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedTracked/landbasedtracked.cpp
+landbasedtracked.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedTracked/landbasedtracked.h
+iostream
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedTracked/landbasedtracked.h
+iostream
+-
+memory
+-
+../LandBasedRobot/LandBasedRobot.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.h
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedWheeled/landbasedwheeled.cpp
+landbasedwheeled.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedWheeled/landbasedwheeled.h
+iostream
+-
+
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedWheeled/landbasedwheeled.h
+../LandBasedRobot/LandBasedRobot.h
+/home/diane/OneDrive/Fall 2020/ENPM809Y Intro Robot Programming/Homework/Final-Project-Group3/src/LandBasedRobot/LandBasedRobot.h
+iostream
+-
+memory
+-
+
