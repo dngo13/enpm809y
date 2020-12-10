@@ -27,7 +27,6 @@ void fp::Algorithm::CallSetMaze() {
     goal_2 = {7, 8};
     goal_3 = {8, 7};
     goal_4 = {8, 8};
-
 }
 
 void fp::Algorithm::Solve() {
@@ -35,26 +34,21 @@ void fp::Algorithm::Solve() {
         if (Maze::MAZE_WIDTH != API::mazeWidth())
             std::cout << "Error, the maze dimensions must match. " << std::endl;
     }
-    API::clearAllColor();
+    fp::API::clearAllText();
+    fp::API::clearAllColor();
     log("~--~Starting~~--");
-
     InitializeMaze(position, direction);
     CallSetMaze();
-    //  while (true) {
-    //  }
+
     //if (Maze::Unsolvable == true) {
     //    std::cerr << "The maze cannot be solved. " << std::endl;
     //    break;
     //  }
 
-//    while (!fp::API::wallFront()) {
-//        fp::API::moveForward();
-//        UpdatePosition(direction, 'f', current_pos);
-//        fp::Algorithm::CheckWall(current_pos, direction);
-//    }
     bool start = true;
     while (true) {
         DFS(start, direction, robot_);
+        start = false;
         if (ResetPressed()) {
             reset();
         }
@@ -64,26 +58,26 @@ void fp::Algorithm::Solve() {
 
 void fp::Algorithm::UpdateDirection(char &current_direction, const char turn) {
     log("Turning " + std::string(1,turn));
-    if (current_direction=='n') {
-        if (turn== 'l')
+    if (current_direction =='n') {
+        if (turn == 'l')
             current_direction = 'w';
         else
             current_direction = 'e';
     }
-    else if (current_direction=='e') {
-        if (turn== 'l')
+    else if (current_direction =='e') {
+        if (turn == 'l')
             current_direction = 'n';
         else
             current_direction = 's';
     }
-    else if (current_direction=='s') {
-        if (turn== 'l')
+    else if (current_direction =='s') {
+        if (turn == 'l')
             current_direction = 'e';
         else
             current_direction = 'w';
     }
-    else if (current_direction=='w') {
-        if (turn== 'l')
+    else if (current_direction =='w') {
+        if (turn == 'l')
             current_direction = 's';
         else
             current_direction = 'n';
@@ -91,30 +85,37 @@ void fp::Algorithm::UpdateDirection(char &current_direction, const char turn) {
     log(std::string(1,current_direction));
 }
 
-void fp::Algorithm::UpdatePosition(const char current_direction, const char move, Position &curr_pos) {
+void fp::Algorithm::UpdatePosition(const char current_direction, const char move, std::array<int, 2> &curr_node) {
     if (current_direction == 'n') {
         if (move == 'f')
-            curr_pos.y++;
+            curr_node[1]++;
         else
-            curr_pos.y--;
+            curr_node[1]--;
+        //log("Current node" + std::to_string(curr_node[1]) + "," + (std::to_string(curr_node[0])));
     }
-    else if (current_direction == 'e') {
+    if (current_direction == 'e') {
         if (move == 'f')
-            curr_pos.x++;
-        else
-            curr_pos.x--;
+            curr_node[0]++;
+//        else
+//            curr_node[0]--;
+        //log("Current node" + std::to_string(curr_node[1]) + "," + (std::to_string(curr_node[0])));
+
     }
-    else if (current_direction == 's') {
+    if (current_direction == 's') {
+        log(std::to_string(curr_node[0]));
+        log(std::to_string(curr_node[1]));
         if (move == 'f')
-            curr_pos.y--;
+            curr_node[1]--;
         else
-            curr_pos.y++;
+            curr_node[1]++;
+        //log("Current node" + std::to_string(curr_node[1]) + "," + (std::to_string(curr_node[0])));
     }
-    else if (current_direction == 'w') {
+    if (current_direction == 'w') {
         if (move == 'f')
-            curr_pos.x--;
-        else
-            curr_pos.x++;
+            curr_node[0]--;
+//        else
+//            curr_node[0]++;
+        //log("Current node" + std::to_string(curr_node[1]) + "," + (std::to_string(curr_node[0])));
     }
 }
 
@@ -129,314 +130,309 @@ bool fp::Algorithm::ResetPressed() {
 }
 
 void fp::Algorithm::reset() {
-    API::ackReset();
+    fp::API::ackReset();
     position.x = 0;
     position.y = 0;
     direction = 'n';
 }
 
-void fp::Algorithm::MoveLeft() {
-    fp::API::turnLeft();
-    fp::API::moveForward();
-}
-void fp::Algorithm::MoveRight(){
-    fp::API::turnRight();
-    fp::API::moveForward();
-}
-
-void fp::Algorithm::CheckWall(Position &current_pos, char &current_direction) {
-    current_pos.x = curr_node[0];
-    current_pos.y = curr_node[1];
-    log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-    log("Checking walls. ");
-    direction = current_direction;
+void fp::Algorithm::CheckWall(std::array<int, 2> curr_node, char &current_direction, std::array<std::array <bool, 16>, 16> visited_node_) {
+    log("CheckWall function");
+    //curr_node = {curr_node[0], curr_node[1]};
+    log("Current Node: " + std::to_string(curr_node[0]) + ", " + std::to_string(curr_node[1]));
+    log("Checking walls.");
     //Check South
-    if (direction == 's') {
+    if (current_direction == 's') {
         log("south");
         if (fp::API::wallLeft()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 'e');
-            //SetWall(current_pos, 'e', hasWall);
+            fp::API::setWall(curr_node[0], curr_node[1], 'e');
             log("South - wall left");
         }
+        if (fp::API::wallRight()) {
+            fp::API::setWall(curr_node[0], curr_node[1], 'w');
+            log("South - wall right");
+        }
         if (fp::API::wallFront()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 's');
-            //SetWall(current_pos, 's', hasWall);
+            fp::API::setWall(curr_node[0], curr_node[1], 's');
             log("South - wall front");
+            fp::API::turnLeft();
+            UpdateDirection(current_direction, 'l');
         } else if (!fp::API::wallFront()) {
             log("South - no wall front ");
         }
-        if (fp::API::wallRight()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 'w');
-            //SetWall(current_pos, 'w', hasWall);
-            log("South - wall right");
-        }
     }
-    direction = current_direction;
     //Check East
-    if (direction == 'e') {
+    else if (current_direction == 'e') {
         log("east");
         if (fp::API::wallLeft()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 'n');
+            fp::API::setWall(curr_node[0], curr_node[1], 'n');
             //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
             log("East - wall left");
-
-        }
-        if (fp::API::wallFront()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 'e');
-            //SetWall(current_pos, 'e', hasWall);
-            //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-            log("East - wall front");
         }
         if (fp::API::wallRight()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 's');
+            fp::API::setWall(curr_node[0], curr_node[1], 's');
             //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
             log("East - wall right");
         }
+        if (fp::API::wallFront()) {
+            fp::API::setWall(curr_node[0], curr_node[1], 'e');
+            //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
+            log("East - wall front");
+            fp::API::turnLeft();
+            UpdateDirection(current_direction, 'l');
+        } else if (!fp::API::wallFront()) {
+            log("East - no wall front ");
+        }
     }
-    direction = current_direction;
     //Check North
-    if (direction == 'n') {
+    else if (current_direction == 'n') {
         log("north");
         if (fp::API::wallLeft()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 'w');
-            //SetWall(current_pos, 'w', hasWall);
+            fp::API::setWall(curr_node[0], curr_node[1], 'w');
             //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
             log("North - wall left");
         }
-        if (fp::API::wallFront()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 'n');
-            //SetWall(current_pos, 'n', hasWall);
-            //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-            log("North - wall front");
-        }
         if (fp::API::wallRight()) {
-            fp::API::setWall(current_pos.x, current_pos.y, 'e');
-            //SetWall(current_pos, 'e', hasWall);
+            fp::API::setWall(curr_node[0], curr_node[1], 'e');
             //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
             log("North - wall right");
         }
+        if (fp::API::wallFront()) {
+            fp::API::setWall(curr_node[0], curr_node[1], 'n');
+            //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
+            log("North - wall front");
+            fp::API::turnLeft();
+            UpdateDirection(current_direction, 'l');
+        }if (fp::API::wallFront() && fp::API::wallLeft()){
+            log("Left corner blocked, turning right");
+            fp::API::turnRight();
+            UpdateDirection(current_direction, 'r');
+        }
+        else if (!fp::API::wallFront()) {
+            log("North - no wall front ");
+        }
     }
-    direction = current_direction;
     //Check West
-    if (direction == 'w') {
+    else if (current_direction == 'w') {
         log("west");
         if (fp::API::wallLeft()) {
-            //SetWall(current_pos, 's', hasWall);
             //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-            fp::API::setWall(current_pos.x, current_pos.y, 's');
-        }
-        if (fp::API::wallFront()) {
-            //SetWall(current_pos, 'w', hasWall);
-            //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-            fp::API::setWall(current_pos.x, current_pos.y, 'w');
+            fp::API::setWall(curr_node[1], curr_node[0], 's');
         }
         if (fp::API::wallRight()) {
-            //SetWall(current_pos, 'n', hasWall);
             //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-            fp::API::setWall(current_pos.x, current_pos.y, 'n');
+            fp::API::setWall(curr_node[1], curr_node[0], 'n');
+        }
+        if (fp::API::wallFront()) {
+            //log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
+            fp::API::setWall(curr_node[1], curr_node[0], 'w');
+            UpdateDirection(current_direction, 'l');
+            current_direction = 's';
+        } else if (!fp::API::wallFront()) {
+            log("West - no wall front ");
         }
     }
+
 }
 
 
-void fp::Algorithm::DFS(bool start, char& current_direction, const std::shared_ptr<fp::LandBasedRobot> &robot) {
+void fp::Algorithm::DFS(bool start, char current_direction, const std::shared_ptr<fp::LandBasedRobot> &robot) {
+    log("Starting DFS");
     std::string dir;
-    current_direction = direction;
+    //current_direction = direction;
     dir = current_direction;
     log(dir);
     robot_ = robot;
     curr_node = {current_pos.x, current_pos.y};
     parent_node = curr_node;
-    visited_node_[current_pos.x][current_pos.y] = true;
+    visited_node_[curr_node[1]][curr_node[0]] = true;
+
     log("Pushing stack ");
     stack_.push(curr_node);
-   // log("Set to south");
+
+    log("Checking if first start");
    if (start) {
-       log(dir);
+       //log(dir);
        if (direction == 'n') {
-           visited_node_[curr_node[0] - 1][curr_node[1]] = false;
+           current_direction = direction;
+           //visited_node_[curr_node[1] + 1][curr_node[0]] = false;
            fp::API::turnLeft();
            UpdateDirection(current_direction, 'l');
            fp::API::turnLeft();
            UpdateDirection(current_direction, 'l');
        }
    }
-   else {
-       direction = 'n';
-   }
-
-   log(dir);
-   log("Checking south");
-    //std::array<int, 2> position_array = {current_pos.x, current_pos.y};
+    dir = current_direction;
+    log(dir);
+    log("While not at goal DFS");
     while (curr_node != goal_1 || curr_node != goal_2 || curr_node != goal_3 ||
             curr_node != goal_4) {
-        CheckWall(current_pos, current_direction);
-        log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-        FindNextNode(curr_node, current_direction, path_blocked_);
+        log("Checking for walls");
+        dir = current_direction;
         log(dir);
-        std::string isBlocked;
-        isBlocked = path_blocked_;
+       // CheckWall(curr_node, current_direction);
+        FindNextNode(curr_node, current_direction, path_blocked_);
+        //dir = current_direction;
+        //log(dir);
+
+        path_blocked_ = CheckPath(next_node, visited_node_);
         log("Blocked?");
 
-        if(!path_blocked_) {
-            log("Nope");
-            fp::API::moveForward();
-            UpdatePosition(current_direction, 'f', current_pos);
-            CheckWall(current_pos, current_direction);
-            log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-            log("Next Node: " + std::to_string(next_node[0]) + ", "+ std::to_string(next_node[1]));
-        }
-       // CheckWall(current_pos, current_direction);
-        //UpdateDirection(current_direction, 'l');
-        //log(dir);
-        //fp::API::moveForward();
 
+        CheckWall(curr_node, current_direction, visited_node_);
+        while(!path_blocked_) {
+            log("set color");
+            fp::API::setColor(curr_node[0], curr_node[1], 'c');
+            log("Nope, move forward");
+            fp::API::moveForward();
+            CheckWall(curr_node, current_direction, visited_node_);
+            UpdatePosition(current_direction, 'f', curr_node);
+            fp::API::setColor(curr_node[0], curr_node[1], 'c');
+            //CheckWall(curr_node, current_direction);
+            log("Current Node: " + std::to_string(curr_node[0]) + ", " + std::to_string(curr_node[1]));
+            log("Next Node: " + std::to_string(next_node[0]) + ", " + std::to_string(next_node[1]));
+//            path_blocked_ = CheckPath(next_node, visited_node_);
+            if(path_blocked_)
+                break;
+        }
+      //  CheckPath(next_node, visited_node_);
+
+//        while(path_blocked_){
+//            log(dir);
+//            CheckPath(next_node, visited_node_);
+//            CheckWall(curr_node, current_direction);
+//            //fp::API::turnLeft();
+//            //CheckPath(next_node, visited_node_);
+//            //UpdateDirection(current_direction, 'l');
+//            CheckWall(curr_node, current_direction);
+//            if(!path_blocked_)
+//                break;
+//        }
 
         }
     }
 
-void fp::Algorithm::FindNextNode(std::array<int, 2> curr_node, char current_direction, bool path_blocked_) {
+void fp::Algorithm::FindNextNode(std::array<int, 2> curr_node, char &current_direction, bool path_blocked_) {
+    log("Finding next node");
+    CheckWall(curr_node, current_direction, visited_node_);
+    log("Current Node: " + std::to_string(curr_node[1]) + ", " + std::to_string(curr_node[0]));
     /**
      * Arrays to define the possible direction of the nodes , north, south, east, west
      */
-    std::array<int, 2> north_node = {curr_node[0], curr_node[1]-1};
-    std::array<int, 2> east_node = {curr_node[0]+1, curr_node[1]};
-    std::array<int, 2> south_node = {curr_node[0], curr_node[1]+1};
-    std::array<int, 2> west_node = {curr_node[0] - 1, curr_node[1]};
+    //std::array<int, 2> north_node = {curr_node[1]+1, curr_node[0]};
+    std::array<int, 2> north_node = {curr_node[0], curr_node[1]+1};
+    std::array<int, 2> east_node = {curr_node[0]+1 ,curr_node[1]};
+    std::array<int, 2> south_node = {curr_node[0],curr_node[1]-1 };
+    std::array<int, 2> west_node = {curr_node[0]-1, curr_node[1] };
 
-    //curr_node = stack_.pop();
-//
-//    if(direction == 'n'){
-//        fp::API::turnLeft();
-//        UpdateDirection(current_direction, 'l');
-//        fp::API::turnLeft();
-//        UpdateDirection(current_direction, 'l');
-//    }
-
-    next_node = south_node;
-    current_direction = 's';
-    log("South?");
-    log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-    log("Next Node: " + std::to_string(next_node[0]) + ", "+ std::to_string(next_node[1]));
-    bool path_found = !CheckPath(next_node, visited_node_);
-    while (!path_found) {
-        bool no_path = CheckPath(next_node, visited_node_);
-        if ( no_path ) {
+    if(current_direction == 'n' && fp::API::wallFront()) {
+        next_node = west_node;
+        log("WEST NODE");
+        next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
+        log("Next Node: " + std::to_string(next_node[0]) + ", " + std::to_string(next_node[1]));
+    }
+    else if(current_direction == 'w' && fp::API::wallFront()) {
+        next_node = south_node;
+        log("SOUTH NODE");
+        next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
+        log("Next Node: " + std::to_string(next_node[0]) + ", " + std::to_string(next_node[1]));
+    }
+    else if(current_direction == 's' && fp::API::wallFront()) {
+        next_node = east_node;
+        log("EAST NODE");
+        next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
+        log("Next Node: " + std::to_string(next_node[0]) + ", " + std::to_string(next_node[1]));
+    }
+    else if(current_direction == 'e' && fp::API::wallFront()) {
+        next_node = north_node;
+        log("NORTH NODE");
+        next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
+        log("Next Node: " + std::to_string(next_node[0]) + ", " + std::to_string(next_node[1]));
+    }
+    //Replace is path with wall front check
+    log("ABOUT TO RUN WHILE PATH NOT FOUND");
+    bool is_path;
+    while (fp::API::wallFront()) {
+        log("INSIDE WHILE LOOP PLS WORKERINO");
+        is_path = !CheckPath(next_node, visited_node_); // meaning there is a path found
+        std::string dir;
+        dir = current_direction;
+        log(dir);
+        if(is_path && (current_direction == 'w')) {
+            next_node = south_node;
+            next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
+            current_direction = 's';
+            log("South?");
+            log("Current Node: " + std::to_string(curr_node[0]) + ", " + std::to_string(curr_node[1]));
+            log("Next Node: " + std::to_string(next_node[0]) + ", " + std::to_string(next_node[1]));
+        }
+        else if (is_path && (current_direction == 's')) {
             //Check south, then east
-            log("South has been visited or has a wall");
-            std::string dir;
-            dir = current_direction;
+            log("Currently South and checking path");
             log(dir);
             next_node = east_node;
-            current_direction = 'e';
             log("East?");
-            log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
-            log("Next Node: " + std::to_string(next_node[0]) + ", "+ std::to_string(next_node[1]));
-            fp::API::turnLeft();
-            UpdateDirection(current_direction, 'l');
-            //CheckWall(current_pos, current_direction);
-        } else {
-            log("Next node found");
-            curr_node = next_node;
-            stack_.push(curr_node);
-            fp::API::setColor(curr_node[0], curr_node[1], 'r');
-            path_found = true;
+            next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
+            log("Current Node: " + std::to_string(curr_node[0]) + ", " + std::to_string(curr_node[1]));
+            log("Next Node: " + std::to_string(next_node[0]) + ", " + std::to_string(next_node[1]));
+            CheckWall(curr_node, current_direction, visited_node_);
+            dir = current_direction;
+            log(dir);
         }
         //Check east, then north
-        no_path = CheckPath(next_node, visited_node_);
-        if (no_path) {
-            log("East has been visited or has a wall");
+        else if (is_path && (current_direction == 'e') ) {
+            log("Currently East and checking path");
             next_node = north_node;
-            current_direction = 'n';
             log("North?");
+            next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
             log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
             log("Next Node: " + std::to_string(next_node[0]) + ", "+ std::to_string(next_node[1]));
-            fp::API::turnLeft();
-            UpdateDirection(current_direction, 'l');
-            //CheckWall(current_pos, current_direction);
-
-        } else {
-            log("Next node found");
-            curr_node = next_node;
-            stack_.push(curr_node);
-            fp::API::setColor(curr_node[0], curr_node[1], 'r');
-            path_found = true;
+            CheckWall(curr_node, current_direction , visited_node_);
+            dir = current_direction;
+            log(dir);
         }
         //Check north, then west
-        no_path = CheckPath(next_node, visited_node_);
-        if (no_path ) {
-            log("North has been visited or has a wall");
+        else if (is_path && (current_direction == 'n')) {
+            log("Currently North and checking path");
             next_node = west_node;
-            direction = 'w';
             log("West?");
+            next_node = {curr_node[0] + next_node[0], curr_node[1] + next_node[1]};
             log("Current Node: " + std::to_string(curr_node[0]) + ", "+ std::to_string(curr_node[1]));
+            CheckWall(curr_node, current_direction, visited_node_);
             log("Next Node: " + std::to_string(next_node[0]) + ", "+ std::to_string(next_node[1]));
-            fp::API::turnLeft();
-            UpdateDirection(current_direction, 'l');
-            //CheckWall(current_pos, current_direction);
-        } else {
-            log("Next node found");
-            curr_node = next_node;
-            stack_.push(curr_node);
-            fp::API::setColor(curr_node[0], curr_node[1], 'c');
-            path_found = true;
+            dir = current_direction;
+            log(dir);
         }
-        //Check South again
-//        no_path = CheckPath(next_node, visited_node_);
-//        if ( no_path) {
-//            log("West has been visited or has a wall");
-//            next_node = south_node;
-//            direction = 's';
-//            fp::API::turnLeft();
-//            UpdateDirection(current_direction, 'l');
-//            CheckWall(current_pos, current_direction);
-//        } else {
-//            log("Next node found");
-//            curr_node = next_node;
-//            stack_.push(curr_node);
-//            fp::API::setColor(curr_node[0], curr_node[1], 'c');
-//            path_found = true;
-//        }
-
-//        no_path = CheckPath(path_blocked_, next_node, direction);
-//        if (is_visited(next_node) || no_path) {
-//            log("West has been visited or has a wall");
-//            next_node = east_node;
-//            direction = 'e';
-//        } else {
-//            log("Next node found");
-//            curr_node = next_node;
-//            stack_.push(next_node);
-//            fp::API::setColor(curr_node[0], curr_node[1], 'c');
-//            no_path = CheckPath(path_blocked_, next_node, direction);
-//        }
+        else {
+            is_path = true;
+            log("Next node found");
+            fp::API::setColor(curr_node[0], curr_node[1], 'c');
+            // curr_node = {curr_node[1]+next_node[1], curr_node[0]+next_node[0]};
+            stack_.push(curr_node);
+            //fp::API::setColor(curr_node[1], curr_node[0], 'c');
+            path_found = true;
+            dir = current_direction;
+            log(dir);
+        }
     }
 }
 
-
 bool fp::Algorithm::CheckPath(std::array<int, 2> next_node, std::array<std::array <bool, 16>, 16> visited_node_) {
-    std::string x;
-    x = next_node[0];
-    std::string y;
-    y = next_node[1];
-    std::string visited;
-    visited = visited_node_[next_node[0]][next_node[1]];
-    log("Visited");
-    log("----");
-    //std::string frontbool;
-    //frontbool = fp::API::wallFront();
-    //log("Is there a wall");
-    //log(frontbool);
-
-    if (visited_node_[next_node[0]][next_node[1]] || fp::API::wallFront()) {
-        log("Path blocked");
-        path_blocked_ = true;
+    bool visited = visited_node_[next_node[1]][next_node[0]];
+    if(visited){
+        log("Visited");
+        if (fp::API::wallFront()) {
+            log("Path blocked");
+            path_blocked_ = true;
+            return path_blocked_;
+        }
         return path_blocked_;
     }
     else {
-        path_blocked_ = false;
+        log("Not visited");
         curr_node = next_node;
         stack_.push(curr_node);
+        path_blocked_ = false;
         log("Path not blocked");
         return path_blocked_;
     }

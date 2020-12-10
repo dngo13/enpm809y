@@ -11,8 +11,6 @@
 #include <array>
 
 
-//DFS Algorithm from S to G
-//Down right up left
 namespace fp {
     class Algorithm {
     public:
@@ -25,7 +23,7 @@ namespace fp {
         }position, current_pos;
         /**
          * A method to print out text to the maze simulator
-         * @param text
+         * @param text Message
          */
         static void log(const std::string& text);
         /**
@@ -33,19 +31,19 @@ namespace fp {
          * @param current_direction char direction of N/S/E/W
          * @param turn char to specify if the robot is turning left or right
          */
-        void UpdateDirection(char& current_direction, char turn);
+        void UpdateDirection(char &current_direction, char turn);
         /**
          * Function to update the position of the robot
          * @param current_direction char direction of N/S/E/W
-         * @param move
-         * @param curr_pos
+         * @param move character to define if the robot moved forward
+         * @param curr_pos array to specify current node/cell of robot
          */
-        void UpdatePosition(char current_direction, char move, Position& curr_pos);
+        void UpdatePosition(char current_direction, char move, std::array<int, 2>& curr_node);
 
         /**
          * Initializes the maze with default settings
-         * @param position
-         * @param direction
+         * @param position structure for x y coordinates, sets to 0 for initialization
+         * @param direction character to assign the robot direction n, s, e, w
          */
         static void InitializeMaze(fp::Algorithm::Position &position, char& direction);
         /**
@@ -53,12 +51,13 @@ namespace fp {
          */
         void Solve();
         /**
-         * Depth First Search Algorithm to traverse through the maze and save visited nodes
+         * Depth First Search Algorithm to traverse through the maze and save visited nodes, starts with checking south
+         * then east, north, and west, in counterclockwise order
          * @param start tells the algorithm if first time starting it
          * @param current_direction current direction of the robot
-         * @param robot
+         * @param robot pointer to one of the available robots, wheeled/tracked
          */
-        void DFS(bool start, char& current_direction, const std::shared_ptr<fp::LandBasedRobot> &robot);
+        void DFS(bool start, char current_direction, const std::shared_ptr<fp::LandBasedRobot> &robot);
         /**
          * If the reset button is pressed
          * @return reset
@@ -79,7 +78,7 @@ namespace fp {
         * @param direction direction that the robot is facing
         * @return
         */
-        void CheckWall(Position &position, char &current_direction);
+        void CheckWall(std::array<int, 2> curr_node, char& current_direction, std::array<std::array <bool, 16>, 16> visited_node_);
 
         /**
          * FindNextNode function checks 1 node forward in every direction and sees if the path is blocked or is visited
@@ -88,7 +87,7 @@ namespace fp {
          * @param current_direction current direction of the robot
          * @param path_blocked_ boolean to see if the path is blocked
          */
-        void FindNextNode(std::array<int, 2> curr_node, char current_direction, bool path_blocked_);
+        void FindNextNode(std::array<int, 2> curr_node, char& current_direction, bool path_blocked_);
         /**
          * Stack where nodes will be pushed
          */
@@ -97,6 +96,7 @@ namespace fp {
          * Shared pointer for the robot
          */
         std::shared_ptr<fp::LandBasedRobot> robot_;
+
 
         /**
          * CheckPath function sees if the next node has been visited or a wall
@@ -115,17 +115,14 @@ namespace fp {
         Maze maze;
         char direction{'n'};
         void ClearStack();
-        void MoveLeft();
-        void MoveRight();
         /**
          * Defining the nodes of arrays
          */
-        std::array<std::array <bool, 16>, 16> visited_node_;
-        std::array<int, 2> curr_node;
-        std::array<int, 2> next_node;
+        std::array<std::array <bool, 16>, 16> visited_node_{false}; //Boolean 16x16 array to keep track of visited nodes
+        std::array<int, 2> curr_node = {0, 0}; //Current node array
+        std::array<int, 2> next_node; //Next node array
         std::array<int, 2> parent_node;
-        std::array<int, 2> goal_1, goal_2, goal_3, goal_4;
-        bool path_found{};
+        std::array<int, 2> goal_1, goal_2, goal_3, goal_4; //Center goals
         bool path_blocked_{true};
 
 
